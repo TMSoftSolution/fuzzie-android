@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/item_store_location_list_id"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+  android:background="@color/white">
+
+  <LinearLayout
+      android:id="@+id/llName"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvName"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#434343"
+        android:textSize="16sp"
+        tools:text="The Madmen Attic Bar"
+        fontPath="@string/font_lato_bold" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvAddress"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#434343"
+        android:textSize="13sp"
+        android:lineSpacingMultiplier="1.2"
+        tools:text="10 Greenwood Avenue - Hillcrest Park, Singapore 289201 Singapore"
+        fontPath="@string/font_lato_regular" />
+
+  </LinearLayout>
+
+  <RelativeLayout
+      android:id="@+id/rlPhone"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+    <android.support.v7.widget.AppCompatTextView
+      android:id="@+id/tvTelephoneLabel"
+      android:layout_marginTop="10dp"
+      android:layout_marginRight="16dp"
+      android:layout_marginLeft="16dp"
+      android:layout_marginBottom="2dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="#aeaeae"
+      android:textSize="13sp"
+      android:text="Telephone"
+      fontPath="@string/font_lato_bold" />
+
+    <android.support.v7.widget.AppCompatTextView
+      android:id="@+id/tvTelephone"
+      android:layout_below="@id/tvTelephoneLabel"
+      android:layout_marginRight="16dp"
+      android:layout_marginLeft="16dp"
+      android:layout_marginBottom="12dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/primary"
+      android:textSize="12sp"
+      tools:text="+65 982618214 "
+      fontPath="@string/font_lato_regular" />
+
+    <ImageView
+      android:id="@+id/btnTelephone"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:padding="12.5dp"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:src="@drawable/ic_store_phone"
+      android:background="?attr/selectableItemBackgroundBorderless" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/lily_white"/>
+  </RelativeLayout>
+
+  <LinearLayout
+      android:id="@+id/llOpenHour"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#aeaeae"
+        android:textSize="13sp"
+        android:text="Opening hours"
+        fontPath="@string/font_lato_bold" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvOpeningHours"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#434343"
+        android:textSize="12sp"
+        android:lineSpacingMultiplier="1.2"
+        tools:text="Monday to Friday: 10am - 8pm\nSaturday: 11am - 6pm"
+        fontPath="@string/font_lato_regular" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lily_white"/>
+
+  </LinearLayout>
+
+</LinearLayout>

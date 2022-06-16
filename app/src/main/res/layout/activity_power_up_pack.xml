@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorJackpot">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_back"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:text="POWER UP PACKS"
+            android:maxLines="1"
+            android:textSize="16sp"
+            fontPath="@string/font_brandon_black"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:text="GET THE POWER"
+                android:textSize="15sp"
+                fontPath="@string/font_brandon_black"
+                android:textAlignment="center"
+                android:textColor="@color/white"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Boost your cashback across all brands by up to 50% for 24 hours and get the highest number of jackpot tickets for each dollar spent."
+                android:textSize="14sp"
+                android:lineSpacingMultiplier="1.2"
+                fontPath="@string/font_lato_regular"
+                android:alpha="0.7"
+                android:textColor="@color/white"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvCoupon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:overScrollMode="never"
+                tools:listitem="@layout/item_power_up"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

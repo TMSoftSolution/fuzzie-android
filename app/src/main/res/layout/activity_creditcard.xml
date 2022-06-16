@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/primary"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_back"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:text="BANK"
+            android:maxLines="1"
+            android:textSize="16sp"
+            fontPath="@string/font_brandon_bold"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp">
+
+                <ImageView
+                    android:id="@+id/ivCreditCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:scaleType="centerCrop"
+                    />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvCreditCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_alignParentBottom="true"
+                    android:textAlignment="center"
+                    android:text="CREDITCARD"
+                    android:maxLines="1"
+                    android:textSize="16sp"
+                    fontPath="@string/font_lato_regular"
+                    android:textColor="#FFFFFF" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Rewards"
+                android:maxLines="1"
+                android:textSize="22sp"
+                fontPath="@string/font_lato_bold"
+                android:textColor="#424242" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                android:textSize="13sp"
+                fontPath="@string/font_lato_regular"
+                android:textColor="#424242" />
+
+            <RelativeLayout
+                android:id="@+id/rlBonus"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="5dp"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="1dp">
+
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvBonusTitle"
+                            android:text="Sign Up Title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            fontPath="@string/font_brandon_black"
+                            android:textColor="#424242" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvBonusBody"
+                            android:layout_marginTop="5dp"
+                            android:text="Sign Up Body"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            fontPath="@string/font_lato_regular"
+                            android:textColor="#424242" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvLearnMore"
+                            android:text="Learn more"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FA3E3F"
+                            fontPath="@string/font_lato_bold"
+                            android:textSize="13sp"
+                            />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="26dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:elevation="2dp"
+                    android:src="@drawable/signup_star"
+                    />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?selectableItemBackground"
+                app:cardBackgroundColor="@color/colorPrimary"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="0dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    fontPath="@string/font_brandon_black"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:text="SIGN UP NOW"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"/>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

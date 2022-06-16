@@ -1,0 +1,119 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.FullScreen" parent="@style/AppTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme.FullScreen">
+        <item name="android:windowBackground">@drawable/background</item>
+    </style>
+
+    <style name="RedPacketTheme" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowBackground">@color/colorRedPacketTheme</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="windowActionBar">false</item>-->
+        <!--<item name="windowNoTitle">true</item>-->
+    </style>
+
+    <style name="AppTheme.Translucent" parent="AppTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="AppTheme.Jackpot" parent="@style/AppTheme.NoActionBar">
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/colorJackpot</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="StyledIndicatorTheme" parent="AppTheme">
+        <item name="vpiCirclePageIndicatorStyle">@style/CustomCirclePageIndicator</item>
+    </style>
+
+    <style name="StyledIndicatorTheme.NoActionBar" parent="AppTheme.NoActionBar">
+        <item name="vpiCirclePageIndicatorStyle">@style/CustomCirclePageIndicator</item>
+    </style>
+
+    <style name="CustomCirclePageIndicator">
+        <item name="fillColor">@android:color/white</item>
+        <item name="strokeColor">@android:color/darker_gray</item>
+        <item name="pageColor">@android:color/darker_gray</item>
+        <item name="centered">true</item>
+    </style>
+
+    <style name="BottomBarTextAppearance">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="AppBarTextAppearance" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="fontPath">@string/font_brandon_black</item>
+    </style>
+
+    <style name="AppBarExpandedTextAppearance" parent="AppBarTextAppearance">
+        <item name="android:color">#00ffffff</item>
+    </style>
+
+    <style name="TransparentButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/selector_btn_transparent</item>
+    </style>
+
+    <style name="SettingSwitch" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">@color/colorPrimary</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">@color/colorPrimary</item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">@color/grey_transparent</item>
+    </style>
+
+    <style name="FullScreenDialogStyle" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="DatePickerSpinner">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColorPrimary">@color/material_teal_light</item>
+        <item name="android:colorControlNormal">@color/material_teal_light</item>
+    </style>
+
+    <style name="FZSlideButtonStyle">
+        <item name="text">Slide to redeem</item>
+        <item name="text_size">@dimen/slide_button_default_text_size</item>
+        <item name="area_margin">@dimen/slide_button_default_area_margin</item>
+        <item name="inner_color">?android:colorBackground</item>
+        <item name="outer_color">@color/colorPrimary</item>
+        <item name="slider_locked">false</item>
+    </style>
+
+</resources>

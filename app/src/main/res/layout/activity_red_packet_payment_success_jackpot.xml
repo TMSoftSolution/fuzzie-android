@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg_jackpot_pay_success"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvTitle"
+                fontPath="@string/font_brandon_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:textAlignment="center"
+                android:lineSpacingMultiplier="1.1"
+                android:layout_gravity="center"
+                android:shadowColor="#33000000"
+                android:shadowDx="0"
+                android:shadowDy="1"
+                android:shadowRadius="5"
+                android:text="CONGRATS! YOU'VE UNLOCKED 3 FREE JACKPOT TICKETS"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                fontPath="@string/font_lato_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:shadowColor="#88000000"
+                android:shadowDx="0"
+                android:shadowDy="2"
+                android:shadowRadius="4"
+                android:text="You tickets have been added to your wallet. Set your own 4D numbers anytime you want."
+                android:lineSpacingMultiplier="1.1"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvContinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground"
+            app:cardBackgroundColor="?attr/colorPrimary"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="0dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                fontPath="@string/font_brandon_black"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="CONTINUE"
+                android:textColor="@color/white"/>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</FrameLayout>

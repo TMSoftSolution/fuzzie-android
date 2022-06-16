@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_transaction_history_id"
+    android:layout_width="wrap_content"
+    android:layout_height="94dp"
+    android:layout_marginStart="16dp">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvOrderDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/llOrderNumber"
+        android:layout_marginBottom="4dp"
+        android:text="10 January 2017, 7:15pm"
+        android:textSize="16sp"
+        fontPath="@string/font_lato_bold"
+        android:textColor="@color/textColorTertiary"/>
+
+    <LinearLayout
+        android:id="@+id/llOrderNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order number: "
+            android:textSize="10sp"
+            fontPath="@string/font_lato_regular"
+            android:textColor="@color/textColorFourth"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvOrderNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#827361"
+            android:textSize="10sp"
+            fontPath="@string/font_lato_regular"
+            android:textColor="@color/textColorFourth"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPrices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llOrderNumber"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/llTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TOTAL: "
+                android:textSize="13sp"
+                fontPath="@string/font_brandon_bold"
+                android:textColor="@color/colorPrimary"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="S$100"
+                android:textSize="13sp"
+                fontPath="@string/font_brandon_bold"
+                android:textColor="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llCashback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CASHBACK: "
+                android:textSize="13sp"
+                fontPath="@string/font_brandon_bold"
+                android:textColor="@color/colorAccent"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvCashback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="S$100"
+                android:textSize="13sp"
+                fontPath="@string/font_brandon_bold"
+                android:textColor="@color/colorAccent"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivArrow"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="8dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_chevron_right_grey"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_border"/>
+</RelativeLayout>

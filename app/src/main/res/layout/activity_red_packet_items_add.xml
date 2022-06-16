@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:background="@color/primary"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_back"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD ITEMS"
+            android:maxLines="1"
+            android:textSize="16sp"
+            fontPath="@string/font_brandon_bold"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:padding="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Help?"
+            android:textColor="@color/white"
+            fontPath="@string/font_lato_bold"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:paddingTop="24dp"
+                    android:paddingBottom="24dp">
+
+                    <ImageView
+                        android:id="@+id/ivBackground"
+                        android:layout_width="60dp"
+                        android:layout_height="82dp"
+                        android:layout_centerVertical="true"
+                        android:adjustViewBounds="false"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/image_red_packet"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/ivBackground"
+                        android:layout_marginStart="15dp"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="LUCKY PACKET QUANTITY"
+                                android:textColor="@color/textColorTertiary"
+                                android:textSize="13sp"
+                                fontPath="@string/font_brandon_black"/>
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="2dp"
+                                android:layout_weight="1"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_gravity="bottom"
+                                android:layout_marginBottom="4dp"
+                                android:src="@drawable/dash_line_horizontal"
+                                android:layerType="software"/>
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tvQuantity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="4"
+                                android:textColor="@color/primary"
+                                android:textSize="14sp"
+                                fontPath="@string/font_lato_bold"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="TOTAL CREDITS"
+                                android:textColor="@color/textColorTertiary"
+                                android:textSize="13sp"
+                                fontPath="@string/font_brandon_black"/>
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="2dp"
+                                android:layout_weight="1"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_gravity="bottom"
+                                android:layout_marginBottom="4dp"
+                                android:src="@drawable/dash_line_horizontal"
+                                android:layerType="software"/>
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tvCredits"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="S$30"
+                                android:textColor="@color/primary"
+                                android:textSize="14sp"
+                                fontPath="@string/font_lato_bold"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="TOTAL JACKPOT TICKETS"
+                                android:textColor="@color/textColorTertiary"
+                                android:textSize="13sp"
+                                fontPath="@string/font_brandon_black"/>
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="2dp"
+                                android:layout_weight="1"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_gravity="bottom"
+                                android:layout_marginBottom="4dp"
+                                android:src="@drawable/dash_line_horizontal"
+                                android:layerType="software"/>
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tvTickets"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="3"
+                                android:textColor="@color/primary"
+                                android:textSize="14sp"
+                                fontPath="@string/font_lato_bold"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/light_border"/>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="15dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?selectableItemBackground"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:background="@drawable/bg_red_packet_item"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:src="@drawable/ic_message"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tvMessageTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ADD A MESSAGE"
+                                android:textColor="@color/textColorTertiary"
+                                android:textSize="14sp"
+                                fontPath="@string/font_brandon_black"/>
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tvMessage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#C4C4C4"
+                                android:textSize="13sp"
+                                android:ellipsize="end"
+                                android:maxLines="2"
+                                fontPath="@string/font_lato_bold"/>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/ivMessageArrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_gray_arrow"/>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvMessageEdit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Edit"
+                            android:textColor="@color/primary"
+                            android:textSize="13sp"
+                            fontPath="@string/font_lato_bold"/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvCredits"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="15dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?selectableItemBackground"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:background="@drawable/bg_red_packet_item"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:src="@drawable/ic_fuzzie"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tvCreditsTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ADD FUZZIE CREDITS"
+                                android:textColor="@color/textColorTertiary"
+                                android:textSize="14sp"
+                                fontPath="@string/font_brandon_black"/>
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tvCreditsNote"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#C4C4C4"
+                                android:textSize="13sp"
+                                fontPath="@string/font_lato_bold"/>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/ivCreditsArrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_gray_arrow"/>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvCreditsEdit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Edit"
+                            android:textColor="@color/primary"
+                            android:textSize="13sp"
+                            fontPath="@string/font_lato_bold"/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvTickets"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="15dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?selectableItemBackground"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:background="@drawable/bg_red_packet_item"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:src="@drawable/ic_ticket"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tvTicketsTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ADD JACKPOT TICKETS"
+                                android:textColor="@color/textColorTertiary"
+                                android:textSize="14sp"
+                                fontPath="@string/font_brandon_black"/>
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tvTicketNote"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#C4C4C4"
+                                android:textSize="13sp"
+                                fontPath="@string/font_lato_bold"/>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/ivTicketArrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_gray_arrow"/>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvTicketEdit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Edit"
+                            android:textColor="@color/primary"
+                            android:textSize="13sp"
+                            fontPath="@string/font_lato_bold"/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvPrepare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?selectableItemBackground"
+        app:cardBackgroundColor="@color/primary"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="0dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvPrepare"
+            fontPath="@string/font_brandon_black"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="PREPARE LUCKY PACKET"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

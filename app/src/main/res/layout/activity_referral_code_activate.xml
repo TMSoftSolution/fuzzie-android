@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/code_success_red"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:id="@+id/ivBackground1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_activate_success_cashback"
+        android:visibility="gone"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/ivCircle"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/success_circle"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvCredits"
+        fontPath="@string/font_lato_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@id/ivCircle"
+        android:layout_marginTop="80dp"
+        tools:text="S$100"
+        android:textColor="@android:color/white"
+        android:textSize="60sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        fontPath="@string/font_brandon_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvCredits"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:text="REFERRAL CREDITS ACTIVATED"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvDescription"
+        fontPath="@string/font_lato_regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_below="@+id/tvTitle"
+        android:textAlignment="center"
+        android:text="This amount will be added to your Fuzzie Credits after you sign in."
+        android:lineSpacingMultiplier="1.2"
+        android:textColor="@color/black"
+        android:alpha="0.5"
+        android:textSize="16sp" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvGotIt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?selectableItemBackground"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="0dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            fontPath="@string/font_brandon_black"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:text="GOT IT"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"/>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

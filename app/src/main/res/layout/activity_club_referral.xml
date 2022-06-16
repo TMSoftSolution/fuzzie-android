@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlMain"
+        android:background="@color/primary"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_back"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CLUB REFERRAL"
+            android:maxLines="1"
+            android:textSize="16sp"
+            fontPath="@string/font_brandon_black"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        android:background="@drawable/bg_club_referral_gradient">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivReferralImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/image_club_referral_bonus" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvReferralTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_alignBottom="@+id/ivReferralImage"
+                    android:text="Get $10 credits each!"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    fontPath="@string/font_lato_black" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvReferralMoreInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_below="@+id/tvReferralTitle"
+                    android:lineSpacingMultiplier="1.3"
+                    android:text="@string/txt_club_referral"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    fontPath="@string/font_lato_regular"/>
+
+
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                app:cardBackgroundColor="#40000000"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="0dp">
+
+                <RelativeLayout
+                    android:id="@+id/rlReferralCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvReferralCode"
+                        fontPath="@string/font_lato_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="16dp"
+                        android:paddingBottom="3dp"
+                        android:text="RACHEL8271"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:id="@+id/vCopy"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/white"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_chain_red"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvInvite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?selectableItemBackground"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="0dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    fontPath="@string/font_brandon_black"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text="SEND INVITE"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp" />
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#B0292A" />
+
+                <RelativeLayout
+                    android:id="@+id/llSuccessReferral"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvTotalReferals"
+                        fontPath="@string/font_lato_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="16dp"
+                        android:text="Total referrals"
+                        android:textSize="14sp"
+                        android:textColor="@color/white"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvTotalReferalsValue"
+                        fontPath="@string/font_lato_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="16dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/white"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="16dp"
+                    android:background="#B0292A" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvCreditsRewarded"
+                        fontPath="@string/font_lato_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="16dp"
+                        android:text="Credits awarded"
+                        android:textSize="14sp"
+                        android:textColor="@color/white"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvCreditsRewardedValue"
+                        fontPath="@string/font_lato_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="16dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/white"/>
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#B0292A" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvViewReferral"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?selectableItemBackground"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="0dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    fontPath="@string/font_brandon_black"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text="VIEW MY REFERRALS"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:background="@drawable/bg_white_stroke_transparent_radius_4dp"
+                    android:textSize="13sp" />
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

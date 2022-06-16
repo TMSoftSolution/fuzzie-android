@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_redeem_details_list_id"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="26dp">
+
+  <android.support.v7.widget.AppCompatTextView
+      android:id="@+id/tvTitle"
+      android:layout_marginBottom="12dp"
+      android:layout_marginRight="16dp"
+      android:layout_marginLeft="16dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="#434343"
+      android:textSize="15sp"
+      android:text="Step 1: Go to your giftbox"
+      fontPath="@string/font_lato_bold" />
+
+  <android.support.v7.widget.AppCompatTextView
+      android:id="@+id/tvBody"
+      android:layout_marginRight="16dp"
+      android:layout_marginLeft="16dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="#434343"
+      android:textSize="13sp"
+      android:lineSpacingMultiplier="1.2"
+      android:text="After purchasing your gift card, it will be place into your giftbox. Just tap on the giftbox icon to find your gift card. "
+      fontPath="@string/font_lato_regular"
+      android:autoLink="web"
+      android:linksClickable="true"
+      android:textColorLink="@color/colorPrimary" />
+
+  <android.support.v7.widget.AppCompatImageView
+      android:id="@+id/ivImage"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:layout_marginRight="16dp"
+      android:layout_marginLeft="16dp"
+      android:adjustViewBounds="true"
+      android:scaleType="fitCenter"/>
+
+</LinearLayout>

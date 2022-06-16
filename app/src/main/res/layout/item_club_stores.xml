@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_club_stores_id"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginBottom="10dp" >
+
+    <View
+        android:id="@+id/topBorder"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lily_white"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        android:layout_below="@+id/topBorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginStart="16dp"
+        android:text="NEARBY STORES"
+        android:textColor="#262626"
+        android:textSize="14sp"
+        fontPath="@string/font_brandon_black"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvViewAll"
+        android:layout_below="@+id/topBorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:padding="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_alignParentEnd="true"
+        android:text="View all"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:textAllCaps="true"
+        fontPath="@string/font_brandon_black" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvStores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:background="@color/white"
+        tools:listitem="@layout/item_club_store"
+        android:paddingStart="11dp"
+        android:paddingEnd="11dp"
+        android:layout_marginBottom="20dp"
+        android:clipToPadding="false"
+        android:overScrollMode="never"/>
+
+    <View
+        android:layout_below="@+id/rvStores"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lily_white"/>
+
+</RelativeLayout>
+

@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/activity_jackpot_payment_id"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:background="@color/primary"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:padding="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_back"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:text="PAY THE BEAR"
+            android:maxLines="1"
+            android:textSize="16sp"
+            fontPath="@string/font_brandon_bold"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvHelp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Help?"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            fontPath="@string/font_lato_regular"/>
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#F5F5F5"
+            android:paddingBottom="16dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvBanner"
+                android:background="#EDEDED"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EDEDED"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="10dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/appCompatTextView4"
+                    fontPath="@string/font_brandon_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Your Bill"
+                    android:textAllCaps="true"
+                    android:textColor="#5E5E5E"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E5E5E5"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvCouponName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_toStartOf="@id/tvCouponPrice"
+                    android:text="Grab gift card"
+                    fontPath="@string/font_lato_regular"
+                    android:textColor="@color/textColorTertiary"
+                    android:textSize="14sp"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvCouponPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="16dp"
+                    android:text="S$70"
+                    fontPath="@string/font_lato_bold"
+                    android:textColor="@color/textColorTertiary"
+                    android:textSize="14sp"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvCashback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_below="@id/tvCouponPrice"
+                    android:text="S$2.10 cashback"
+                    fontPath="@string/font_lato_bold"
+                    android:textColor="#3B93DA"
+                    android:textSize="12sp"/>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E5E5E5"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/appCompatTextView6"
+                        fontPath="@string/font_lato_regular"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Subtotal"
+                        android:textAllCaps="true"
+                        android:textColor="#424242"
+                        android:textSize="16sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvSubtotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="S$30.00"
+                        android:textAllCaps="true"
+                        android:textColor="#424242"
+                        android:textSize="16sp"
+                        fontPath="@string/font_lato_bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:id="@+id/llFuzzieUsed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/appCompatTextView5"
+                        fontPath="@string/font_lato_regular"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Fuzzie Credits Used"
+                        android:textAllCaps="true"
+                        android:textColor="#424242"
+                        android:textSize="16sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvFuzzieUsed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-S$30.00"
+                        android:textAllCaps="true"
+                        android:textColor="#424242"
+                        android:textSize="16sp"
+                        fontPath="@string/font_lato_bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llAddPromoCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/bg_promocode"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_promocode"/>
+
+                    <sg.com.fuzzie.android.views.EditTextBackEvent
+                        android:id="@+id/etPromoCode"
+                        android:background="@android:color/transparent"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:hint="Add promo code"
+                        android:textColorHint="#A4A4A4"
+                        android:textColor="#424242"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        fontPath="@string/font_lato_regular"
+                        android:textSize="14sp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llDeletePromoCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/bg_promocode"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/icon_promocode"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvPromoCode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:text="+S$5 Cashback"
+                        android:textColor="#3B93DA"
+                        fontPath="@string/font_lato_bold"
+                        android:textSize="14sp"
+                        />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvDelete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Delete"
+                        android:textColor="@color/colorPrimary"
+                        fontPath="@string/font_lato_bold"
+                        android:textSize="14sp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cashContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/bg_promocode"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/cashbackInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:gravity="center|start"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:src="@drawable/ic_cashback"/>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            fontPath="@string/font_lato_bold"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginStart="8dp"
+                            android:text="Total Cashback"
+                            android:textColor="#5B5B5B"
+                            android:textSize="14sp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvEarn"
+                            fontPath="@string/font_lato_black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="15dp"
+                            android:gravity="center"
+                            android:textColor="@color/discount_blue"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ticketInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:gravity="center|start"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:src="@drawable/ic_jackpot_ticket"/>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            fontPath="@string/font_lato_bold"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginStart="8dp"
+                            android:text="Free Jackpot Tickets"
+                            android:textColor="#5B5B5B"
+                            android:textSize="14sp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvTicketCount"
+                            fontPath="@string/font_lato_black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="15dp"
+                            android:gravity="center"
+                            android:textColor="#5B5B5B"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EDEDED"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="10dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Payment Methods"
+                    android:textAllCaps="true"
+                    android:textColor="#5E5E5E"
+                    android:textSize="13sp"
+                    fontPath="@string/font_brandon_medium" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E5E5E5"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvUseCredits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?selectableItemBackground"
+                app:cardBackgroundColor="@color/white"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ivFuzzieCredits"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="16dp"
+                        android:src="@drawable/fuzzie_credits"/>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="8dp" android:paddingLeft="10dp"
+                        android:paddingRight="10dp" android:paddingTop="8dp">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="PAY WITH FUZZIE CREDITS"
+                            android:textAllCaps="true"
+                            android:textColor="#424242"
+                            android:textSize="14sp"
+                            fontPath="@string/font_brandon_black" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvCreditsLeft"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="S$0"
+                            android:textColor="#424242"
+                            fontPath="@string/font_lato_regular"
+                            android:textSize="14sp" />
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/ivUseCredits"
+                        android:layout_width="51dp"
+                        android:layout_height="31dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/switch_off"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E5E5E5"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvTopUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="This item can only be purchased with Fuzzie Credits. Top-up your credits here"
+                android:lineSpacingMultiplier="1.2"
+                android:textColor="#494949"
+                fontPath="@string/font_lato_regular"
+                android:textSize="13sp" />
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvPayTheBear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="13dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?selectableItemBackground"
+                app:cardBackgroundColor="@color/colorPrimary"
+                app:contentPadding="16dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="0dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/appCompatTextView3"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    fontPath="@string/font_brandon_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Pay the Bear"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    tools:text="Pay the Bear" />
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

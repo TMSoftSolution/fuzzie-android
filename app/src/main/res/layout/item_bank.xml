@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_bank_id"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="131dp">
+
+    <ImageView
+        android:id="@+id/ivBank"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:background="#E5E5E5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+</LinearLayout>

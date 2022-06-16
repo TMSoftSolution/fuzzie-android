@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_credit_bar_id"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:visibility="visible">
+
+    <RelativeLayout
+        android:id="@+id/rlCredit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/fuzzi_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ic_fuzzie"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvCredits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/fuzzi_icon"
+            android:layout_toEndOf="@+id/fuzzi_icon"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:text="$0"
+            fontPath="@string/font_lato_bold"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvCredits"
+            android:layout_marginTop="30dp"
+            android:text="Fuzzie credits available"
+            android:textColor="@color/textColorTertiary"
+            android:textSize="13sp"
+            />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnTopUp"
+        style="@style/TransparentButton"
+        fontPath = "@string/font_lato_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:text="@string/txt_top_up"
+        android:textSize="13sp"
+        android:textColor="@color/colorPrimary"
+        android:visibility="visible"/>
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_top_up_id"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <ImageView
+        android:id="@+id/ivTopUp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="15dp"
+        android:src="@drawable/icon_top_up_1"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toEndOf="@id/ivTopUp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="15dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fontPath = "@string/font_lato_bold"
+            android:text="S$300"
+            android:textSize="30sp"
+            android:textColor="@color/textColorTertiary"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fontPath = "@string/font_lato_bold"
+            android:text="Fuzzie Credits"
+            android:textSize="14sp"
+            android:textColor="@color/textColorTertiary"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvBuy"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:background="@drawable/bg_primary_radius_4dp"
+        android:gravity="center"
+        fontPath = "@string/font_brandon_black"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:layout_centerVertical="true"
+        android:text="BUY"
+        android:textSize="14sp"
+        android:textColor="@color/white"/>
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:alpha="0.1"
+        android:layout_marginStart="15dp"
+        android:layout_alignParentBottom="true"/>
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:alpha="0.1"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

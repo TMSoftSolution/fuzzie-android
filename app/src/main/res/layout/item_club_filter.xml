@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_club_filter_id"
+    android:layout_width="match_parent"
+    android:layout_marginStart="16dp"
+    android:layout_height="80dp">
+
+    <LinearLayout
+        android:id="@+id/llCategory"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_club_filter_category_icon_selected"
+        android:layout_centerVertical="true"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/ivCategory"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:alpha="0.4"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/llCategory"
+        android:layout_marginStart="12dp"
+        android:textColor="#3F3F3F"
+        android:textSize="16sp"
+        fontPath="@string/font_lato_bold"
+        tools:text="Beauty" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_border"/>
+
+</RelativeLayout>

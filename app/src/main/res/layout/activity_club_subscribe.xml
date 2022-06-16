@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.club.ClubSubscribeActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/image_club_sign"
+                    android:adjustViewBounds="true"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/fuzzie_club_logo"
+                    app:layout_constraintTop_toTopOf="@+id/imageView"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                    app:layout_constraintStart_toStartOf="@+id/imageView"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView"/>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ENJOY 1 YEAR ACCESS"
+                            android:textAlignment="center"
+                            android:textColor="@color/primary"
+                            android:textSize="16sp"
+                            fontPath="@string/font_brandon_black" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvValid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            tools:text="Valid from today till 31 Aug 19"
+                            android:textAlignment="center"
+                            android:textColor="#939393"
+                            android:textSize="16sp"
+                            fontPath="@string/font_lato_regular" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="60dp"
+                    android:gravity="center"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:text="@string/txt_club_sub_title1"
+                        android:textAlignment="center"
+                        android:textColor="#3F3F3F"
+                        android:textSize="23sp"
+                        fontPath="@string/font_lato_black" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/txt_club_sub_body1"
+                        android:textAlignment="center"
+                        android:textColor="#3F3F3F"
+                        android:textSize="17sp"
+                        fontPath="@string/font_lato_regular" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="60dp"
+                        android:src="@drawable/ic_club_ticket"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:text="@string/txt_club_sub_title2"
+                        android:textAlignment="center"
+                        android:textColor="#3F3F3F"
+                        android:textSize="18sp"
+                        fontPath="@string/font_lato_black" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/txt_club_sub_body2"
+                        android:textAlignment="center"
+                        android:textColor="#3F3F3F"
+                        android:lineSpacingMultiplier="1.2"
+                        android:textSize="16sp"
+                        fontPath="@string/font_lato_regular" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="60dp"
+                        android:src="@drawable/ic_club_bag"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:text="@string/txt_club_sub_title3"
+                        android:textAlignment="center"
+                        android:textColor="#3F3F3F"
+                        android:textSize="18sp"
+                        fontPath="@string/font_lato_black" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/txt_club_sub_body3"
+                        android:textAlignment="center"
+                        android:textColor="#3F3F3F"
+                        android:lineSpacingMultiplier="1.2"
+                        android:textSize="16sp"
+                        fontPath="@string/font_lato_regular" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="60dp"
+                        android:src="@drawable/ic_club_envelop"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:text="@string/txt_club_sub_title4"
+                        android:textAlignment="center"
+                        android:textColor="#3F3F3F"
+                        android:textSize="18sp"
+                        fontPath="@string/font_lato_black" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/txt_club_sub_body4"
+                        android:textAlignment="center"
+                        android:textColor="#3F3F3F"
+                        android:lineSpacingMultiplier="1.2"
+                        android:textSize="16sp"
+                        fontPath="@string/font_lato_regular" />
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/btnFAQ"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:text="Read our FAQ"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"
+                        fontPath="@string/font_lato_bold"
+                        style="@style/Base.Widget.AppCompat.Button.Borderless" />
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/btnTerms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="90dp"
+                        android:text="Terms &amp; conditions"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"
+                        fontPath="@string/font_lato_bold"
+                        style="@style/Base.Widget.AppCompat.Button.Borderless" />
+
+                </LinearLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_back"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:text="JOIN THE CLUB"
+            android:maxLines="1"
+            android:textSize="16sp"
+            fontPath="@string/font_brandon_bold"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomBanner"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="#E0FFFFFF"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EDEDED"/>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvSubscribe"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/primary"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="SUBSCRIBE NOW"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    fontPath="@string/font_brandon_black" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:foreground="?selectableItemBackground"
+                    app:cardBackgroundColor="#24000000"
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="0dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp"
+                        tools:text="S$/87.99/year"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        fontPath="@string/font_lato_bold" />
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</RelativeLayout>

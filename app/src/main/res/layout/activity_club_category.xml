@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="@color/primary"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_back"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:text="FOOD &amp; DRINK"
+            android:maxLines="1"
+            android:textSize="16sp"
+            android:ellipsize="end"
+            fontPath="@string/font_brandon_black"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/ivMode"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="8dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_club_location" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvStores"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            android:overScrollMode="never"/>
+
+        <RelativeLayout
+            android:id="@+id/rlMap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/mapView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <me.crosswall.lib.coverflow.core.PagerContainer
+                android:id="@+id/pageContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/transparent"
+                android:visibility="gone">
+
+                <android.support.v4.view.ViewPager
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_gravity="center"
+                    android:overScrollMode="never"/>
+
+            </me.crosswall.lib.coverflow.core.PagerContainer>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivMyLocation"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_my_location"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <Space
+                    android:id="@+id/space"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:visibility="gone"/>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

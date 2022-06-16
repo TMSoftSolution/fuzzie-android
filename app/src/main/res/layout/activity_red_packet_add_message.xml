@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_red_packet_add_message_activity"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/primary">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_back"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:text="ADD MESSAGE"
+            android:maxLines="1"
+            android:textSize="16sp"
+            fontPath="@string/font_brandon_black"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:focusableInTouchMode="true"
+            android:focusable="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/etMessage"
+            fontPath="@string/font_lato_regular"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/white"
+            android:gravity="top"
+            android:hint="Your message"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine|textCapSentences"
+            android:lines="100"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="16dp"
+            android:textColorHint="@color/textColorFourth"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_border" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="0dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                fontPath="@string/font_brandon_black"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="ADD MESSAGE"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

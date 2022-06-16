@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:id="@+id/llSearch"
+        android:background="@color/primary"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="2.5dp"
+            app:cardBackgroundColor="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/ic_search_grey"
+                    android:layout_marginStart="10dp"/>
+
+                <sg.com.fuzzie.android.views.EditTextBackEvent
+                    android:id="@+id/etSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:maxLines="1"
+                    android:hint="Search for a brand, place or type."
+                    android:textColor="#646464"
+                    android:textSize="12sp"
+                    android:inputType="text"
+                    android:background="@android:color/transparent"
+                    fontPath="@string/font_lato_regular" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            fontPath="@string/font_brandon_regular"
+            android:text="Cancel" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/llSearch">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:tabIndicatorColor="@color/colorPrimary"
+            app:tabSelectedTextColor="@color/colorPrimary"
+            app:tabTextColor="#939393"
+            fontPath="@string/font_brandon_black">
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tab_places"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PLACES"/>
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tap_stores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STORES" />
+
+        </android.support.design.widget.TabLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_border" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvPlaces"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_club_store_location"
+            android:overScrollMode="never"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llEmpty"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/llSearch"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/oops"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            fontPath="@string/font_brandon_black"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp" />
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/bear_dead"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="@string/search_no_result_for_club"
+            android:textColor="@color/textColorTertiary"
+            android:textSize="13sp"
+            fontPath="@string/font_lato_regular" />
+
+    </LinearLayout>
+
+    <sg.com.fuzzie.android.views.EmptyRecyclerView
+        android:id="@+id/rvSearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/llSearch"
+        tools:listitem="@layout/item_club_store_location"
+        android:overScrollMode="never"
+        android:visibility="gone">
+
+    </sg.com.fuzzie.android.views.EmptyRecyclerView>
+
+
+</RelativeLayout>

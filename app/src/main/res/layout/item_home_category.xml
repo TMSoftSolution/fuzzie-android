@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_category_id"
+    android:layout_width="140dp"
+    android:layout_height="100dp"
+    android:layout_marginLeft="10dp"
+    android:background="@drawable/gradient"
+    android:orientation="vertical">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ivBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/categories_placeholder"
+        app:riv_corner_radius="3dp"
+        app:riv_border_width="0.5dp"
+        app:riv_border_color="#e5e5e5"/>
+
+    <ImageView
+        android:id="@+id/ivGradient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_category"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvName"
+        fontPath="@string/font_brandon_black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="SHOPPING"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:shadowColor="#7F000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="4"
+        android:textSize="15sp" />
+
+</RelativeLayout>

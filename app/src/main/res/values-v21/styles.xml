@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.TransparentStatusBar" parent="AppTheme.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_arrow_back</item>
+    </style>
+
+    <style name="TransparentButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">?android:selectableItemBackground</item>
+    </style>
+
+</resources>

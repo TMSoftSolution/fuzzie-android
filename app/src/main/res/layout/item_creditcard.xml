@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_creditcard"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivCreditCard"
+            android:layout_width="60dp"
+            android:layout_height="38dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvCreditCard"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="#424242"
+            android:textSize="13sp"
+            android:text="Botanical Energy(1 Hour) dasd dasda dasdasdasd asdasd asdasda"
+            fontPath="@string/font_lato_bold"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvDetails"
+            android:layout_marginTop="-5dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#3B93DA"
+            android:textSize="13sp"
+            android:text="$100"
+            fontPath="@string/font_lato_bold"
+            />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_chevron_right_grey" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:background="#E5E5E5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+</LinearLayout>

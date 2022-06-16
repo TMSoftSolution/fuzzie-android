@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorJackpot">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/jackpot_logo_label"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:id="@+id/llLiveNow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvWatchingNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#696969"
+                            fontPath="@string/font_lato_bold"
+                            android:textSize="12sp"
+                            android:layout_gravity="center"/>
+
+                        <!--<com.jaedongchicken.ytplayer.YoutubePlayerView-->
+                            <!--android:id="@+id/youtubePlayerView"-->
+                            <!--android:layout_marginTop="16dp"-->
+                            <!--android:layout_marginStart="16dp"-->
+                            <!--android:layout_marginEnd="16dp"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:visibility="gone"/>-->
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/ivSlot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bg_slot"
+                        android:scaleType="fitXY"/>
+
+                    <LinearLayout
+                        android:id="@+id/llDigits"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <sg.com.fuzzie.android.views.ticker.TickerView
+                            android:id="@+id/digit1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="16dp"
+                            android:layout_marginStart="9dp"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="38sp"
+                            app:ticker_animationDuration="1000"
+                            app:ticker_defaultCharacterList="number" />
+
+                        <sg.com.fuzzie.android.views.ticker.TickerView
+                            android:id="@+id/digit2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="16dp"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="38sp"
+                            app:ticker_animationDuration="1000"
+                            app:ticker_defaultCharacterList="number" />
+
+                        <sg.com.fuzzie.android.views.ticker.TickerView
+                            android:id="@+id/digit3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="16dp"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="38sp"
+                            app:ticker_animationDuration="1000"
+                            app:ticker_defaultCharacterList="number" />
+
+                        <sg.com.fuzzie.android.views.ticker.TickerView
+                            android:id="@+id/digit4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_marginEnd="9dp"
+                            android:padding="16dp"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="38sp"
+                            app:ticker_animationDuration="1000"
+                            app:ticker_defaultCharacterList="number" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginBottom="8dp">
+
+                        <pl.droidsonroids.gif.GifImageView
+                            android:id="@+id/givCommencing"
+                            android:layout_width="200dp"
+                            android:layout_height="7dp"
+                            android:src="@drawable/commencing_live"
+                            />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:alpha="0.1"/>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CURRENT DRAW"
+                            android:textSize="12sp"
+                            fontPath="@string/font_lato_regular"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:textColor="@color/white"
+                            android:alpha="0.3"/>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:alpha="0.1"/>
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvDrawAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textSize="35sp"
+                        fontPath="@string/font_brandon_bold"
+                        android:textColor="@color/white"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvDrawIdentifier"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        fontPath="@string/font_lato_regular"
+                        android:textColor="@color/white"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llNextDraw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="THANKS FOR WATCHING!"
+                    android:textColor="@color/white"
+                    fontPath="@string/font_brandon_black"
+                    android:textSize="20sp"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="20dp"
+                    android:text="The draw is now over. Get your Jackpot tickets for the next draw and we’ll see you soon!"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:lineSpacingMultiplier="1.2"
+                    android:alpha="0.7"
+                    fontPath="@string/font_lato_regular"
+                    android:textSize="12sp"/>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvJoinNextDraw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?selectableItemBackground"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="0dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        fontPath="@string/font_brandon_bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="JOIN THE NEXT DRAW"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSendBankDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvCongrate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="CONGRATULATIONS JULIAN!"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    fontPath="@string/font_brandon_black"
+                    android:textSize="20sp"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvBankDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/txt_jackpot_send_bank_details_body"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:lineSpacingMultiplier="1.2"
+                    android:alpha="0.7"
+                    fontPath="@string/font_lato_regular"
+                    android:textSize="12sp"/>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvSendBankDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?selectableItemBackground"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="0dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        fontPath="@string/font_brandon_bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="SEND MY BANK DETAILS"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="YOUR NUMBERS"
+                    android:textSize="12sp"
+                    fontPath="@string/font_lato_regular"
+                    android:layout_marginStart="16dp"
+                    android:textColor="@color/white"
+                    android:alpha="0.3"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvNoParticipate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="8dp"
+                    fontPath="@string/font_lato_regular"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:text="You did not participate in this draw. Get your tickets for the next draw!"
+                    android:textColorLink="@color/colorPrimary"
+                    android:visibility="gone"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:id="@+id/rvCombination"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:clipToPadding="false"
+                    android:overScrollMode="never"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WINNING NUMBERS"
+                    android:textSize="12sp"
+                    fontPath="@string/font_lato_regular"
+                    android:layout_marginStart="16dp"
+                    android:textColor="@color/white"
+                    android:alpha="0.3"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvPrizes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:nestedScrollingEnabled="false"
+                    android:overScrollMode="never"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_back"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:padding="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Help?"
+            android:textColor="@color/white"
+            fontPath="@string/font_lato_bold"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

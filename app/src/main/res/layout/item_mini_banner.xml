@@ -1,0 +1,14 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_mini_banner_id"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginBottom="10dp">
+
+    <sg.com.fuzzie.android.views.autoloop.AutoScrollViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:nestedScrollingEnabled="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:id="@+id/item_club_store_list_id"
+    android:background="@color/white">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/ivStore"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="2dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/categories_placeholder"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/ivStore"
+        android:layout_toStartOf="@+id/ivArrow"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvBrandName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanuki Raw"
+            android:textColor="@color/textColorTertiary"
+            android:textSize="14sp"
+            fontPath="@string/font_lato_bold" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvStoreName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="East Cost Park"
+            android:textColor="#262626"
+            android:textSize="12sp"
+            android:alpha="0.7"
+            fontPath="@string/font_lato_regular" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivCategory"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@drawable/ic_category_1_black"
+                android:alpha="0.4"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="Japanese"
+                android:textColor="#939393"
+                android:textSize="10sp"
+                fontPath="@string/font_lato_regular" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/ivStore"
+        android:layout_marginEnd="16dp"
+        android:text="0.2 km"
+        android:textColor="#939393"
+        android:textSize="12sp"
+        android:alpha="0.7"
+        fontPath="@string/font_lato_regular" />
+
+    <ImageView
+        android:id="@+id/ivArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_chevron_right_grey"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_border"/>
+
+</RelativeLayout>

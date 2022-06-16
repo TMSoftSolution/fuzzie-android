@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fuzzie Rewards"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:layout_marginTop="64dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="32dp"
+                fontPath="@string/font_lato_black"
+                />
+
+            <LinearLayout
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_cashback" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="What is Cashback?"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    fontPath="@string/font_lato_bold"
+                    />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_cashback_intro"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:lineSpacingMultiplier="1.2"
+                fontPath="fonts/Lato_Regular.ttf"
+                />
+
+            <LinearLayout
+                android:layout_marginTop="32dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_powerup" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="What is Power Up?"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    fontPath="@string/font_lato_bold"
+                    />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_power_up_intro"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:lineSpacingMultiplier="1.2"
+                fontPath="fonts/Lato_Regular.ttf"
+                />
+
+            <LinearLayout
+                android:layout_marginTop="32dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_jackpot_ticket" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="What is the Fuzzie Jackpot?"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    fontPath="@string/font_lato_bold"
+                    />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_jackpot_intro"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:lineSpacingMultiplier="1.2"
+                fontPath="fonts/Lato_Regular.ttf"
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TERMS &amp; CONDITIONS"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="32dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                fontPath="@string/font_lato_bold"
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_margin="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_reward_terms"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:lineSpacingMultiplier="1.2"
+                fontPath="@string/font_lato_regular"
+                />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_close_white"/>
+
+</RelativeLayout>
+

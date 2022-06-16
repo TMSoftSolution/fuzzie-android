@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:id="@+id/item_club_store_id"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="210dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:background="@drawable/bg_club_store"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/ivStore"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/brands_placeholder"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius_top_left="3dp"
+        app:riv_corner_radius_top_right="3dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvBrandName"
+            fontPath="@string/font_lato_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:lines="1"
+            android:ellipsize="end"
+            android:text="Tanuki Raw"
+            android:textColor="#262626"
+            android:textSize="14sp"
+            android:alpha="0.9"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvStoreName"
+            fontPath="@string/font_lato_regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:lines="1"
+            android:ellipsize="end"
+            android:text="East Cost Park"
+            android:textColor="#262626"
+            android:textSize="12sp"
+            android:alpha="0.7"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:paddingBottom="15dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivCategory"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:scaleType="centerCrop"
+                android:alpha="0.4"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvCategory"
+                fontPath="@string/font_lato_regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:lines="1"
+                android:ellipsize="end"
+                android:text="Japanese"
+                android:textColor="#939393"
+                android:textSize="10sp"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvDistance"
+                fontPath="@string/font_lato_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:ellipsize="end"
+                android:text="0.2 km"
+                android:textColor="#939393"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

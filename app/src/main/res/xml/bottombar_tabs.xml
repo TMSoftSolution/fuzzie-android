@@ -1,0 +1,22 @@
+<tabs>
+    <tab
+        id="@+id/tab_shop"
+        icon="@drawable/ic_shop"
+        title="SHOP" />
+    <tab
+        id="@+id/tab_nearby"
+        icon="@drawable/ic_nearby"
+        title="NEARBY" />
+    <tab
+        id="@+id/tab_club"
+        icon="@drawable/ic_club"
+        title="CLUB" />
+    <tab
+        id="@+id/tab_wallet"
+        icon="@drawable/ic_wallet"
+        title="WALLET" />
+    <tab
+        id="@+id/tab_me"
+        icon="@drawable/ic_me"
+        title="ME" />
+</tabs>

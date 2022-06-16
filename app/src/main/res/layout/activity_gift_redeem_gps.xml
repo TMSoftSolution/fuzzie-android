@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="4dp"
+            android:padding="12dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_back_red"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REDEEM"
+            android:textSize="16sp"
+            fontPath="@string/font_brandon_black"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="true"
+            android:textColor="@color/primary" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvHelp"
+            android:layout_marginEnd="12dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:padding="4dp"
+            android:text="Help?"
+            android:textColor="@color/primary"
+            android:textSize="14sp"
+            fontPath="@string/font_lato_bold"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/fuzzie_redeem_logo"
+            android:layout_gravity="center"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvGiftName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:text="S$100 The MadMen Attic bar gift card "
+            android:ellipsize="end"
+            android:textSize="18sp"
+            android:textColor="@color/textColorTertiary"
+            android:lineSpacingMultiplier="1.1"
+            fontPath="@string/font_lato_black"/>
+
+        <LinearLayout
+            android:id="@+id/llLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="40dp"
+                android:background="@color/lily_white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_store_location_red"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvStoreName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="National Gallery"
+                    android:textSize="16sp"
+                    android:textColor="@color/textColorTertiary"
+                    fontPath="@string/font_lato_regular"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lily_white"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <sg.com.fuzzie.android.views.FZSlideButton
+        android:id="@+id/slideButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"/>
+
+</LinearLayout>

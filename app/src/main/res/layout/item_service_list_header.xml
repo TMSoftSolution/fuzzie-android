@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/item_service_list_header_id"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_marginTop="-1dp"
+  android:background="#F5F5F5">
+
+  <View
+    android:id="@+id/vTopDivider"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/lily_white" />
+
+  <android.support.v7.widget.AppCompatTextView
+    android:id="@+id/tvHeaderTitle"
+    android:layout_marginTop="15dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_below="@id/vTopDivider"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#9d9d9d"
+    android:textSize="11sp"
+    android:textAllCaps="true"
+    android:maxLines="1"
+    android:text="Botanical Energy(1 Hour)"
+    fontPath="@string/font_brandon_bold" />
+
+  <View
+    android:layout_below="@id/tvHeaderTitle"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_marginTop="8dp"
+    android:background="@color/lily_white"/>
+
+</RelativeLayout>

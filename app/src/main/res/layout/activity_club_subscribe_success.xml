@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/code_success_red"/>
+
+    <ImageView
+        android:id="@+id/ivCircle"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/success_circle"/>
+
+    <ImageView
+        android:id="@+id/ivPresent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:src="@drawable/ic_bear_club"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        fontPath="@string/font_brandon_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_centerHorizontal="true"
+        android:text="WELCOME TO THE CLUB!"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:lineSpacingMultiplier="1.2"
+        android:layout_below="@+id/ivPresent"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvBody"
+        fontPath="fonts/Lato_Regular.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:textAlignment="center"
+        android:text="Great work, You now have full access to all Fuzzie Club Offers."
+        android:textColor="@color/black"
+        android:alpha="0.5"
+        android:textSize="16sp"
+        android:lineSpacingMultiplier="1.2"
+        android:layout_below="@+id/tvTitle"
+        android:layout_centerHorizontal="true" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvStart"
+        fontPath="@string/font_brandon_black"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:background="@drawable/white_bg"
+        android:text="ENTER THE CLUB"
+        android:textColor="@color/colorPrimary"
+        android:textSize="13sp" />
+
+</RelativeLayout>

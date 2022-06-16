@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="@color/primary"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="WALLET"
+            android:textSize="16sp"
+            android:textAllCaps="true"
+            fontPath="@string/font_brandon_bold"
+            android:layout_gravity="center"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:paddingBottom="20dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:paddingTop="20dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvBallance"
+                fontPath="@string/font_lato_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="S$300"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                fontPath="@string/font_lato_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvBallance"
+                android:layout_gravity="center"
+                android:alpha="0.4"
+                android:text="Fuzzie Credits balance"
+                android:textColor="@color/black"
+                android:textSize="13dp" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvTopUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?selectableItemBackground"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="0dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    fontPath="@string/font_brandon_black"
+                    android:layout_width="70dp"
+                    android:layout_height="26dp"
+                    android:gravity="center"
+                    android:text="TOP UP"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="11sp" />
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvFuzzieCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?selectableItemBackground"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="2dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:id="@+id/ivFuzzieCredits"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:src="@drawable/ic_fuzzie_card"
+                            android:layout_centerVertical="true"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:orientation="vertical"
+                            android:layout_toEndOf="@+id/ivFuzzieCredits"
+                            android:layout_marginStart="16dp"
+                            android:layout_centerVertical="true">
+
+
+                            <android.support.v7.widget.AppCompatTextView
+                                fontPath="@string/font_brandon_black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="FUZZIE CARDS"
+                                android:textColor="#3B3B3B"
+                                android:textSize="16sp" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                fontPath="@string/font_lato_regular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:text="Your vouchers"
+                                android:textColor="@color/textColorTertiary"
+                                android:textSize="13sp" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tvCard"
+                                fontPath="@string/font_lato_bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:text="3 active cards"
+                                android:textColor="@color/black"
+                                android:alpha="0.4"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvCardBadge"
+                            fontPath="@string/font_brandon_black"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:paddingStart="2dp"
+                            android:paddingEnd="2dp"
+                            android:paddingBottom="4dp"
+                            android:layout_alignParentEnd="true"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:background="@drawable/bg_noti_badge"/>
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvTickets"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?selectableItemBackground"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="2dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp">
+
+                            <ImageView
+                                android:id="@+id/ivTickets"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:src="@drawable/ic_jackpot_tickets"
+                                android:layout_centerVertical="true"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:orientation="vertical"
+                                android:layout_toEndOf="@+id/ivTickets"
+                                android:layout_marginStart="16dp"
+                                android:layout_centerVertical="true">
+
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    fontPath="@string/font_brandon_black"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="JACKPOT TICKETS"
+                                    android:textColor="#3B3B3B"
+                                    android:textSize="16sp" />
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    fontPath="@string/font_lato_regular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:gravity="center"
+                                    android:text="Your Jackpot tickets &amp; results"
+                                    android:textColor="@color/textColorTertiary"
+                                    android:textSize="13sp" />
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/tvTicket"
+                                    fontPath="@string/font_lato_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:gravity="center"
+                                    android:text="3 active cards"
+                                    android:textColor="@color/black"
+                                    android:alpha="0.4"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tvTicketBadge"
+                                fontPath="@string/font_brandon_black"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:paddingStart="2dp"
+                                android:paddingEnd="2dp"
+                                android:paddingBottom="4dp"
+                                android:layout_alignParentEnd="true"
+                                android:gravity="center"
+                                android:text="1"
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                android:background="@drawable/bg_noti_badge"/>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvRedPacket"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?selectableItemBackground"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="2dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:id="@+id/ivRedPacket"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:src="@drawable/ic_red_packet"
+                            android:layout_centerVertical="true"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:orientation="vertical"
+                            android:layout_toEndOf="@+id/ivRedPacket"
+                            android:layout_marginStart="23dp"
+                            android:layout_centerVertical="true">
+
+
+                            <android.support.v7.widget.AppCompatTextView
+                                fontPath="@string/font_brandon_black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="LUCKY PACKETS"
+                                android:textColor="#3B3B3B"
+                                android:textSize="16sp" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                fontPath="@string/font_lato_regular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:text="Your Lucky Packets"
+                                android:textColor="@color/textColorTertiary"
+                                android:textSize="13sp" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tvRedPacket"
+                                fontPath="@string/font_lato_bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:text="3 active cards"
+                                android:textColor="@color/black"
+                                android:alpha="0.4"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvRedPacketBadge"
+                            fontPath="@string/font_brandon_black"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:paddingStart="2dp"
+                            android:paddingEnd="2dp"
+                            android:paddingBottom="4dp"
+                            android:layout_alignParentEnd="true"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:background="@drawable/bg_noti_badge"/>
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

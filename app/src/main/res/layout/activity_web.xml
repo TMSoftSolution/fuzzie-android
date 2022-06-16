@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="56dp"
+      android:background="@color/primary">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_arrow_back" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        fontPath="@string/font_brandon_bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:maxLines="1"
+        android:text="WEB"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+  </RelativeLayout>
+
+  <WebView
+      android:id="@+id/webView"
+      android:layout_weight="1"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      />
+
+</LinearLayout>

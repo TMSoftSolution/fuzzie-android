@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:id="@+id/item_red_packet_sent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4 Lucky Packets"
+            android:textColor="@color/textColorTertiary"
+            android:textSize="14sp"
+            fontPath="@string/font_lato_bold"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Bought today"
+            android:textColor="#B2B2B2"
+            android:textSize="12sp"
+            fontPath="@string/font_lato_regular"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_gray_arrow"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lily_white"/>
+</RelativeLayout>

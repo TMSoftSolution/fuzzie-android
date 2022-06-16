@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/primary">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_back"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:text="FUZZIE CARDS"
+            android:maxLines="1"
+            android:textSize="16sp"
+            fontPath="@string/font_brandon_black"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:focusableInTouchMode="true"
+            android:focusable="true"/>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+      android:id="@+id/tab_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/colorPrimary"
+      app:tabIndicatorColor="@color/white"
+      app:tabSelectedTextColor="@color/white"
+      app:tabTextColor="@color/colorPrimaryDark" >
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tab_active"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ACTIVE"
+            />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tab_used"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USED"
+            />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tab_sent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FOR FRIENDS"
+            />
+
+  </android.support.design.widget.TabLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swipeContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/llGiftBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvGiftBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:background="@android:color/white"
+                    app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                    tools:listitem="@layout/item_giftbox"
+                    android:overScrollMode="never"/>
+
+
+                <ProgressBar
+                    android:id="@+id/loadMore"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:indeterminateTint="@color/loblolly"
+                    android:indeterminateTintMode="src_in"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlgiftempty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/bear"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/bear_mustache"
+                android:scaleType="fitCenter"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bear"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="No items available"
+                android:textSize="13sp"
+                fontPath="@string/font_lato_regular"
+                android:layout_gravity="center"
+                android:textColor="@color/textColorSecondary" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvRefresh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:layout_gravity="bottom"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?selectableItemBackground"
+                app:cardBackgroundColor="@color/colorPrimary"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="4dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvRefresh"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    fontPath="@string/font_brandon_bold"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:text="@string/refresh"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"/>
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

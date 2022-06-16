@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_dialog_map_highlight"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AA000000">
+
+
+    <LinearLayout
+        android:id="@+id/llMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="32dp"
+        android:paddingBottom="32dp"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_fz_alert">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image_club_device"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Introducing the Fuzzie Club"
+                    android:textColor="@color/textColorTertiary"
+                    android:textSize="18sp"
+                    fontPath="@string/font_lato_bold"
+                    />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvBody"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Save even more with the Fuzzie Club and enjoy hundred of offers and deals accross Singapore."
+                    android:textColor="@color/textColorTertiary"
+                    android:textSize="13sp"
+                    fontPath="@string/font_lato_regular"
+                    />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvTryItOutNow"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_height="30dp"
+                    android:background="?selectableItemBackground"
+                    android:clickable="true"
+                    android:textSize="14sp"
+                    android:text="Explore now"
+                    android:gravity="center"
+                    fontPath="@string/font_lato_bold"
+                    android:textAlignment= "center"
+                    android:textColor="@color/colorPrimary"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/llMain"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/ivHighlighted"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="-4dp"
+                android:adjustViewBounds="true"
+                android:cropToPadding="false"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_nearby_line" />
+            <ImageView
+                android:id="@+id/ivHighlighted"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/ic_club_highlighted"
+                android:layout_marginBottom="2dp"/>
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

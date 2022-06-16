@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_club_top_brands_id"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginBottom="10dp" >
+
+    <View
+        android:id="@+id/topBorder"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lily_white"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        android:layout_below="@+id/topBorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginStart="16dp"
+        android:text="TOP BRANDS"
+        android:textColor="#262626"
+        android:textSize="14sp"
+        fontPath="@string/font_brandon_black"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvBrands"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:background="@color/white"
+        tools:listitem="@layout/item_club_top_brand"
+        android:paddingStart="11dp"
+        android:paddingEnd="11dp"
+        android:layout_marginBottom="10dp"
+        android:clipToPadding="false"
+        android:overScrollMode="never"/>
+
+    <View
+        android:layout_below="@+id/rvBrands"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lily_white"/>
+
+</RelativeLayout>
+

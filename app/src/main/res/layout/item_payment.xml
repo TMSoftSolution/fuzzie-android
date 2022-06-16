@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_payment_id"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvGiftName"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#424242"
+            android:textSize="14sp"
+            android:text="Botanical Energy(1 Hour) dasd dasda dasdasdasd asdasd asdasda"
+            fontPath="@string/font_lato_regular"
+            />
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvGiftPrice"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textColor="#424242"
+                android:textSize="14sp"
+                android:textAllCaps="true"
+                android:text="$100"
+                fontPath="@string/font_lato_bold"
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvCashback"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#3B93DA"
+                android:textSize="12sp"
+                android:text="S$100 cashback"
+                fontPath="@string/font_lato_bold"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EDEDED"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+</LinearLayout>

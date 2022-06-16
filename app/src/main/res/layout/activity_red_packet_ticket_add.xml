@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:id="@+id/id_red_packet_ticket_add_activity"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:background="@color/primary"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_back"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:text="ADD JACKPOT TICKET"
+            android:maxLines="1"
+            android:textSize="16sp"
+            fontPath="@string/font_brandon_bold"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                fontPath="@string/font_brandon_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:text="JACKPOT TICKETS"
+                android:textColor="#9D9D9D"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/light_border" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:layout_marginStart="16dp"
+                        android:src="@drawable/ic_ticket"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvTicketGive"
+                            fontPath="@string/font_brandon_black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="JACKPOT TICKETS PER PACKET"
+                            android:textColor="@color/textColorTertiary"
+                            android:textSize="13sp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvTicketNote"
+                            fontPath="@string/font_lato_regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="3 Jackpot tickets available"
+                            android:textColor="#8C8C8C"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/etTicket"
+                        fontPath="@string/font_lato_bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingEnd="16dp"
+                        android:paddingStart="0dp"
+                        android:background="@android:color/transparent"
+                        android:hint="0"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/middleSeparator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@color/light_border" />
+
+                <LinearLayout
+                    android:id="@+id/llTotalTickets"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            fontPath="@string/font_brandon_black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="16dp"
+                            android:text="TOTAL TICKETS TO GIVE"
+                            android:textColor="@color/textColorTertiary"
+                            android:textSize="13sp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvQuantityNote"
+                            fontPath="@string/font_lato_regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="4dp"
+                            android:text="For XX Packets"
+                            android:textColor="#8C8C8C"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvTotalTicket"
+                        fontPath="@string/font_lato_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginEnd="16dp"
+                        android:text="0"
+                        android:textColor="@color/textColorTertiary"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/light_border" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvGetMore"
+                fontPath="@string/font_lato_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="Get more Jackpot tickets here"
+                android:textColor="#494949"
+                android:textSize="13sp" />
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground"
+            app:cardBackgroundColor="@color/primary"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="0dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                fontPath="@string/font_brandon_black"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="ADD TICKETS"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

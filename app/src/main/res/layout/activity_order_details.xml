@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/primary"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_back"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:text="ORDER DETAILS"
+            android:maxLines="1"
+            android:textSize="16sp"
+            fontPath="@string/font_brandon_bold"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="16dp"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="YOUR BILL"
+                android:textAllCaps="true"
+                android:textSize="14sp"
+                fontPath="@string/font_brandon_black"
+                android:textColor="#5F5E5E"
+                android:background="#EAEAEA"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:orientation="vertical"
+                android:focusableInTouchMode="true"
+                android:background="@color/white">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvOrderDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="10 January 2017, 7:15pm"
+                    android:textSize="16sp"
+                    fontPath="@string/font_lato_bold"
+                    android:textColor="@color/textColorTertiary"/>
+
+                <LinearLayout
+                    android:id="@+id/llOrderNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Order number: "
+                        android:textSize="12sp"
+                        fontPath="@string/font_lato_regular"
+                        android:textColor="@color/textColorFourth"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvOrderNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="#827361"
+                        android:textSize="12sp"
+                        fontPath="@string/font_lato_regular"
+                        android:textColor="@color/textColorFourth"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/light_border"/>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:clipToPadding="false"
+                android:nestedScrollingEnabled="false"
+                android:overScrollMode="never"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_border"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingStart="16dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="PAYMENT METHODS USED"
+                android:textAllCaps="true"
+                android:textSize="14sp"
+                fontPath="@string/font_brandon_black"
+                android:textColor="#5F5E5E"
+                android:background="#EAEAEA"/>
+
+            <LinearLayout
+                android:id="@+id/llCredits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitCenter"
+                        android:layout_marginStart="16dp"
+                        android:src="@drawable/fuzzie_credits"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="4dp"
+                        android:text="Fuzzie Credits Used"
+                        android:textColor="#474747"
+                        fontPath="@string/font_brandon_medium"
+                        android:textSize="16sp"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvCreditValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:text="S$50"
+                        android:textSize="16sp"
+                        fontPath="@string/font_lato_bold"
+                        android:textColor="@color/loblolly"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/light_border"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/ivPayment"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitCenter"
+                        android:layout_marginStart="16dp"
+                        android:src="@drawable/ic_payment_uob"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvCardNumber"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="4dp"
+                        android:text="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679; 3469"
+                        android:textColor="#474747"
+                        fontPath="@string/font_brandon_medium"
+                        android:textSize="16sp"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvCardValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:text="S$50"
+                        android:textSize="16sp"
+                        fontPath="@string/font_lato_bold"
+                        android:textColor="@color/loblolly"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/light_border"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

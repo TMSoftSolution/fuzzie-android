@@ -1,0 +1,252 @@
+<resources>
+    <string name="app_name">Fuzzie</string>
+    <string name="facebook_app_id">348869791858116</string>
+    <string name="fb_login_protocol_scheme">fb348869791858116</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    //Fonts
+    <string name="font_brandon_regular">fonts/Brandon_reg.ttf</string>
+    <string name="font_brandon_medium">fonts/Brandon_med.otf</string>
+    <string name="font_brandon_bold">fonts/Brandon_bld.otf</string>
+    <string name="font_brandon_black">fonts/Brandon_blk.otf</string>
+    <string name="font_brandon_italic">fonts/Brandon_reg_it.otf</string>
+    <string name="font_lato_black">fonts/Lato_Black.ttf</string>
+    <string name="font_lato_bold">fonts/Lato_Bold.ttf</string>
+    <string name="font_lato_italic">fonts/Lato_Italic.ttf</string>
+    <string name="font_lato_regular">fonts/Lato_Regular.ttf</string>
+    <string name="font_lato_light">fonts/Lato_Light.ttf</string>
+
+    <string name="join_sub_title">GET THE BEST EXPERIENCE</string>
+    <string name="join_body">You’ll get to track friends’ birthdays and checkout their wishlists. We’ll never post anything on your behalf.</string>
+
+
+    <string name="error_incorrect_code">Incorrect code</string>
+    <string name="already_member">Already a Fuzzie member? Sign in here</string>
+    <string name="signin_here"> Sign in here</string>
+
+    <string name="activation_title">Just one more step...</string>
+
+
+    <string name="txt_try_again">TRY AGAIN</string>
+    <string name="txt_verifying">VERIFYING...</string>
+    <string name="txt_terms_and_conditions">Terms and conditions</string>
+    <string name="txt_where_to_redeem">Where to redeem</string>
+    <string name="txt_about_the_brand">About the brand</string>
+    <string name="txt_redeem">REDEEM</string>
+    <string name="txt_gift_it_to_a_friend">Gift it to a friend</string>
+    <string name="txt_description">Description</string>
+    <string name="txt_items">Items</string>
+    <string name="txt_terms_amp_conditions"><![CDATA[Terms & conditions]]></string>
+    <string name="txt_mark_as_redeemed">Mark as redeemed</string>
+    <string name="txt_go_to_merchant_store">Go to Merchant Store</string>
+
+    <string name="instruction_redeem_pin">Please ask Merchant to enter code to redeem your gift</string>
+    <string name="instruction_redeem_present_code">Present this code to merchant</string>
+    <string name="instruction_redeem_online"><![CDATA[Copy & enter this code on merchant store during checkout]]></string>
+    <string name="txt_wish_listed_by">Wishlisted by</string>
+    <string name="recommended_club_offers">RECOMMENDED CLUB OFFERS</string>
+    <string name="txt_others_also_bought">OTHERS ALSO BOUGHT</string>
+    <string name="txt_promo">PROMO</string>
+    <string name="giftcard">GIFT CARD</string>
+    <string name="txt_packages">PACKAGES</string>
+    <string name="txt_view_more">View More</string>
+    <string name="txt_visit_website">Visit Website</string>
+    <string name="string_view_full_screen">View Full Screen</string>
+    <string name="txt_empty_wishlist_title">WHAT DO YOU WISH FOR?</string>
+    <string name="txt_empty_likelist_title">WHAT DO YOU LIKE?</string>
+    <string name="txt_empty_wishlist_instruction">Start adding brands here and let friends know what to get for you on your special days.</string>
+    <string name="txt_empty_wishlist">NO WISHLIST YET!</string>
+    <string name="txt_tempty_likelist">NO LIKE YET!</string>
+    <string name="txt_empty_likelst_instruction">Tap on the heart icons of your favourite brands to start adding to this list. </string>
+
+    <string name="hint_promo_code">Your promo code</string>
+    <string name="txt_empty_bag">Your bag is empty. Start shopping and earn instant cashback!</string>
+    <string name="hint_card_number">Card number</string>
+    <string name="hint_postal_code">Billing postal code</string>
+    <string name="hint_card_expire">MM/YY</string>
+    <string name="hint_card_cvv">CVV</string>
+    <string name="hint_card_zip_code">Billing postal code</string>
+
+    <string name="referral_promo_title">They get $5 You get $5</string>
+    <string name="referral_promo_more_info">When your friends sign up with your invite code, they get S$5 instantly. When they spend a total of S$25, you get S$5 too!</string>
+    <string name="how_it_works_explaination">Every time a new Fuzzie user signs up with your invite code, they will get S$5 credited to their account immediately.\n\nOnce they earn their first S$5 cashback, you will automatically get S$5 added to your account.</string>
+    <string name="copied_to_clipboard">Code copied to clipboard</string>
+
+
+    <!-- Tutorial -->
+    <string name="skip">Skip</string>
+    <string name="start_tutorial">Start tutorial</string>
+    <string name="next_step">Next step</string>
+    <string name="welcome_to_fuzzie">Welcome to Fuzzie!</string>
+    <string name="fuzzie_gives_you_instant_cashback">Fuzzie gives you INSTANT cashback. Let me show you how easy it is to use Fuzzie and save a lot of money</string>
+    <string name="btn_continue">Continue</string>
+
+    <string name="btn_done">Done</string>
+    <string name="make_your_first_purchase">Make your first purchase of any amount\nwithin the time period below and win $2 credits instantly</string>
+    <string name="oops">OOPS!</string>
+    <string name="search_no_result">No results. Please search for another brand</string>
+    <string name="search_no_result_for_club">No results available.</string>
+    <string name="save">SAVE</string>
+    <string name="edit_profile">EDIT PROFILE</string>
+    <string name="how_it_works">How it works</string>
+    <string name="no_items_available">No items available.</string>
+    <string name="secured_with">Secured with</string>
+    <string name="change_password">CHANGE PASSWORD</string>
+    <string name="profile_photo">PROFILE PHOTO</string>
+    <string name="edit">Edit</string>
+    <string name="something_has_stunned_the_bear">Something has stunned the Bear</string>
+    <string name="refresh">REFRESH</string>
+    <string name="desc_redeem_online_gift">Not able to use your code now? You can still access and use your code after the countdown.</string>
+    <string name="desc_redeemed_online_gift">Unable to use your code previously? Don’t worry, you can still use your code before it expires.</string>
+    <string name="online_redeem_confirm">Your card will be shifted to the Used section in 24 hours. You can still access and use your code after the countdown.</string>
+    <string name="go_to_merchant_store">GO TO MERCHANT STORE</string>
+    <string name="view_my_referrals">View my referrals</string>
+    <string name="referrals">REFERRALS</string>
+    <string name="no_strings_attached">No strings attached.</string>
+    <string name="no_referrals">You do not have any referrals yet</string>
+    <string name="terms_conditions_privacy"><![CDATA[By joining Fuzzie, you agree with the Bear\'s <b><u>Privacy Policy</u></b> and <b><u>Terms and Conditions.</u></b>]]></string>
+    <string name="my_friends">MY FUZZIE FRIENDS</string>
+    <string name="your_warm_fuzzie_message"><![CDATA[Your warm & fuzzie message…]]></string>
+
+    <!-- Gift It How It Work-->
+    <string name="gift_it_question1">How do I send a gift?</string>
+    <string name="gift_it_answer1">Step 1: Personalise the gift with your friend\'s name and your message. \nStep 2: Once ready, checkout and make payment. \nStep 3: Send your gift! Your gift will be wrapped into a nice link that you can send by WhatsApp, SMS, Facebook Messenger, Email or copy and paste the link anywhere you like.</string>
+    <string name="gift_it_question2">How can my friends open and redeem my gift?</string>
+    <string name="gift_it_answer2">They just need to click on the gift link that you sent to open your gift. To redeem, they need to sign in to their Fuzzie account (or create a new one if they don\'t have one). Your gift will be automatically added to their Gift Box and they can redeem anytime during their validity period.</string>
+    <string name="gift_it_question3">Who can I send gifts to?</string>
+    <string name="gift_it_answer3">You can send your gifts to anyone who has a Singapore registered mobile number.</string>
+    <string name="gift_it_question4">What are the delivery methods available?</string>
+    <string name="gift_it_answer4">You can send your gifts via WhatsApp, Facebook Messenger, SMS, Email or copy and paste the link anywhere you like.</string>
+    <string name="gift_it_question5">How long will delivery take?</string>
+    <string name="gift_it_answer5">Delivery happens instantly!</string>
+    <string name="gift_it_question6">Do my friends need a Fuzzie account to receive my gift?</string>
+    <string name="gift_it_answer6">They do not need an account to receive. But they will need to sign up to Fuzzie (or sign in if they already have an account) to redeem the gift.</string>
+    <string name="gift_it_question7">When I send a gift, who gets the cashback?</string>
+    <string name="gift_it_answer7">You will be rewarded with the cashback and your friend gets your thoughtful gift!</string>
+    <string name="gift_it_question8">How will my gift look like?</string>
+    <string name="gift_it_answer8">Pretty awesome, check it out below!</string>
+
+    <string name="gifting_available">Surprise friends with a warm &amp; fuzzy gift card from their favourite brands. Delivery is instant!</string>
+    <string name="whats_app">WhatsApp</string>
+    <string name="wechat">WeChat</string>
+    <string name="body_fuzzie_facebok_friends_empty">You don’t have any friends on Fuzzie yet. Invite friends with your referral code and the both of you will get S$5 each.</string>
+    <string name="change_email">CHANGE EMAIL</string>
+    <string name="text_order_history_empty">Don\'t be shy. Make your first purchase and experience the wonders of instant cashback.</string>
+    <string name="txt_top_up">Top Up</string>
+    <string name="txt_home_jackpot"><![CDATA[Win S$15,000 & more every Friday, 7pm! Enter now to get your free Jackpot tickets.*]]></string>
+    <string name="txt_jackpot_tickets">Win S$15.000 and more each week*. Jackpot tickets are given free with every mini-coupon purchased</string>
+    <string name="giftbox">GIFT BOX</string>
+    <string name="txt_jackpot_teasing_body">The game everyone\'s been waiting for.</string>
+    <string name="txt_jackpot_send_bank_details_body">Look like you\'ve won a price during the draw. Write to us at jackpot@fuzzie.com.sg with your bank details. We will transfer the prize money directly to your bank account. </string>
+    <string name="txt_jackpot_available">You can now stock up your Jackpot tickets in your wallet after purchase and use them anytime later for any draw you like. Have fun &amp; good luck!</string>
+    <string name="txt_cashback_intro">Cashback is a percentage of your item value that we give back to you instantly as Fuzzie Credits. You can use this right away to purchase anything you like on Fuzzie or cash out to your bank account.</string>
+    <string name="txt_power_up_intro">A Power Up is a temporary boost to your cashback for participating brands. The Power Up cashback for each brand is highlighted with a lightning icon. You can buy as many gift cards as you like during the Power Up period to enjoy the bonus cashback and use them anytime within the validity period of the gift cards.</string>
+    <string name="txt_jackpot_intro">Jackpot tickets let you participate in the Fuzzie Jackpot. You can set your own 4-digit number on each ticket. Strike the winning number during our live draw and win awesome cash prizes given straight to your bank account. Live draws are based on actual Singapore Pools 4D game results. Get up to 2X higher cash prizes than Singapore Pools with the Jackpot!</string>
+    <string name="txt_learn_more_reward"><b><u>Learn more about your rewards</u></b></string>
+    <string name="txt_reward_terms">Fuzzie gives you cashback on all your purchases.
+                                    \n\nCashback is given instantly as Fuzzie credits and you can use it right away to buy anything you like on Fuzzie.
+                                    \n\nS$1 = 1 credit
+                                    \n\nYour credit works like cash and you can continue to enjoy cashback when you use it to make your purchase. (eg: Item costs S$100 and there is a 10% cashback. You use S$10 credits to offset purchase. You pay S$90 and you receive 10% x S$100= $10 credits).
+                                    \n\nYour credits are valid for 2 years on a rolling basis. When you top up your credits, the expiry will shift to 2 years from the date of the top up. You can top up by simply shopping on Fuzzie and earning cashback, buying more credits or by activating Fuzzie Cards.
+                                    \n\nJackpot tickets are valid for 90 days on a rolling basis. When you add a new Jackpot ticket to your wallet, the validity of all your tickets will be set to 90 days from that day.
+                                    \n\nYou can set any 4-digit number you like on each Jackpot ticket and use it for any of the live draws. You can set a maximum of 10 Jackpot tickets per draw.</string>
+    <string name="txt_more_category">More categories\ncoming soon</string>
+    <string name="txt_club_referral">When friends subscribe to the Fuzzie Club with your referral code below, each of you will get $10 credits right away.</string>
+    <string name="txt_club_sub_title1">Live smarter with the\nFuzzie Club</string>
+    <string name="txt_club_sub_body1">Enjoy the pleasures of life guilt-free</string>
+    <string name="txt_club_sub_title2">Lots of great offers</string>
+    <string name="txt_club_sub_body2">Access hundreds of 1-for-1 deals and big discounts with more added all the time.</string>
+    <string name="txt_club_sub_title3">Save big effortlessly</string>
+    <string name="txt_club_sub_body3">Keep using the Club and you\'ll easily save over $1,000 each year.</string>
+    <string name="txt_club_sub_title4">Score bonus referral rewards</string>
+    <string name="txt_club_sub_body4">You and your friends get $10 each when they become members.</string>
+    <string name="txt_club_exclusive_title">Exclusive for Fuzzie\nClub Members</string>
+    <string name="txt_club_exclusive_body">Join the Fuzzie Club now to get this item\nand access many more deals.</string>
+
+    <string-array name="arr_tutor_titles">
+        <item>1. Choose a gift card</item>
+        <item>2. Confirm your cashback amount</item>
+        <item>3. Checkout and get instant cashback</item>
+        <item>4. Redeem your gift card</item>
+    </string-array>
+
+    <string-array name="arr_tutor_contents">
+        <item>Browse over 100 brands on Fuzzie and select the gift card you would like to buy</item>
+        <item>Every gift card will feature the cashback amount you will instantly receive</item>
+        <item>Pay with your credit card or Fuzzie credits. Your cashback will be credited instantly into your Fuzzie account after purchase. Use your cashback for your next purchase or cash it out</item>
+        <item>For online stores, enter the promo code sent to you on the merchant site. For physical stores, let the staff enter a pin on your phone and you’re done!</item>
+    </string-array>
+
+    <!-- Help Menu -->
+    <string-array name="activate_help_menu">
+        <item>Read our FAQ</item>
+        <item>Email us</item>
+        <item>Facebook us</item>
+        <item>Cancel</item>
+    </string-array>
+
+    <string-array name="gifting_help_menu">
+        <item>Read our Gifting FAQ</item>
+        <item>Email us</item>
+        <item>Facebook us</item>
+        <item>Cancel</item>
+    </string-array>
+
+    <string-array name="jackpot_help_menu">
+        <item>Read our Jackpot FAQ</item>
+        <item>Email us</item>
+        <item>Facebook us</item>
+        <item>Cancel</item>
+    </string-array>
+
+    <string-array name="me_help_menu">
+        <item>Email us</item>
+        <item>Facebook us</item>
+        <item>Cancel</item>
+    </string-array>
+
+    <string-array name="photo_menu">
+        <item>Take photo</item>
+        <item>Choose photo</item>
+        <item>Cancel</item>
+    </string-array>
+
+    <string-array name="profile_photo_menu">
+        <item>View image</item>
+        <item>Take photo</item>
+        <item>Choose existing photo</item>
+        <item>Remove image</item>
+        <item>Cancel</item>
+    </string-array>
+
+    <string-array name="gender_menu">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Cancel</item>
+    </string-array>
+
+    <string-array name="auth_menu">
+        <item>Send an email</item>
+        <item>Chat on Facebook</item>
+        <item>Cancel</item>
+    </string-array>
+
+    <!-- Bear icon array -->
+
+    <integer-array name="avatar_bears">
+        <item>@drawable/avatar_bear_7</item>
+        <item>@drawable/avatar_bear_6</item>
+        <item>@drawable/avatar_bear_5</item>
+        <item>@drawable/avatar_bear_4</item>
+        <item>@drawable/avatar_bear_3</item>
+        <item>@drawable/avatar_bear_2</item>
+        <item>@drawable/avatar_bear_1</item>
+    </integer-array>
+
+
+</resources>

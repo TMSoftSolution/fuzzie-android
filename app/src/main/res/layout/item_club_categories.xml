@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_club_categories_id"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/topBorder"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lily_white"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        tools:listitem="@layout/item_club_category"
+        android:paddingStart="11dp"
+        android:paddingEnd="11dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:clipToPadding="false"
+        android:overScrollMode="never"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lily_white"/>
+
+</LinearLayout>
+

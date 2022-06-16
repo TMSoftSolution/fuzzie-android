@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/primary">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_back"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:text="DELIVERY"
+            android:maxLines="1"
+            android:textSize="16sp"
+            fontPath="@string/font_brandon_black"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white" />
+        
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvHelp"
+            android:layout_marginEnd="8dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:padding="8dp"
+            android:text="Help?"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            fontPath="@string/font_lato_regular"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v4.widget.NestedScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llRedPacket"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:id="@+id/ivBackground"
+                            android:layout_width="60dp"
+                            android:layout_height="82dp"
+                            android:adjustViewBounds="false"
+                            android:scaleType="centerCrop"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/image_red_packet"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@id/ivBackground"
+                            android:layout_marginStart="15dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="LUCKY PACKET QUANTITY"
+                                    android:textColor="@color/textColorTertiary"
+                                    android:textSize="13sp"
+                                    fontPath="@string/font_brandon_black"/>
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="2dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_gravity="bottom"
+                                    android:layout_marginBottom="4dp"
+                                    android:src="@drawable/dash_line_horizontal"
+                                    android:layerType="software"/>
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/tvQuantity"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/primary"
+                                    android:textSize="14sp"
+                                    fontPath="@string/font_lato_bold"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp">
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="TOTAL CREDITS"
+                                    android:textColor="@color/textColorTertiary"
+                                    android:textSize="13sp"
+                                    fontPath="@string/font_brandon_black"/>
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="2dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_gravity="bottom"
+                                    android:layout_marginBottom="4dp"
+                                    android:src="@drawable/dash_line_horizontal"
+                                    android:layerType="software"/>
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/tvTotal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/primary"
+                                    android:textSize="14sp"
+                                    fontPath="@string/font_lato_bold"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp">
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    fontPath="@string/font_brandon_black"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="TOTAL JACKPOT TICKETS"
+                                    android:textColor="@color/textColorTertiary"
+                                    android:textSize="13sp" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="2dp"
+                                    android:layout_gravity="bottom"
+                                    android:layout_marginBottom="4dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_weight="1"
+                                    android:layerType="software"
+                                    android:src="@drawable/dash_line_horizontal" />
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/tvTicketCount"
+                                    fontPath="@string/font_lato_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/primary"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="YOUR MESSAGE"
+                            android:textColor="@color/textColorTertiary"
+                            android:textSize="13sp"
+                            fontPath="@string/font_brandon_black"/>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvMessage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="With luck and prosperity"
+                            android:textColor="#8A8A8A"
+                            android:textSize="14sp"
+                            fontPath="@string/font_lato_regular"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/light_border"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvDelivery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="You can send your Lucky Packets anytime from your wallet."
+                        android:textColor="@color/textColorTertiary"
+                        android:textSize="12sp"
+                        android:visibility="visible"
+                        fontPath="@string/font_lato_regular"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="DELIVER YOUR LUCKY PACKET VIA"
+                        android:textColor="#9D9D9D"
+                        android:textSize="12sp"
+                        fontPath="@string/font_brandon_black"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/light_border"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white">
+
+                    <LinearLayout
+                        android:id="@+id/llWhatsapp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:src="@drawable/ic_share_whatsapp"/>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="WhatsApp"
+                            android:textColor="@color/textColorTertiary"
+                            android:textSize="16sp"
+                            fontPath = "@string/font_lato_regular"/>
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:src="@drawable/ic_chevron_right_grey"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="16dp"
+                        android:background="@color/light_border"/>
+
+                    <LinearLayout
+                        android:id="@+id/llMessenger"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:src="@drawable/ic_share_messenger"/>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Messenger"
+                            android:textColor="@color/textColorTertiary"
+                            android:textSize="16sp"
+                            fontPath = "@string/font_lato_regular"/>
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:src="@drawable/ic_chevron_right_grey"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="16dp"
+                        android:background="@color/light_border"/>
+
+                    <LinearLayout
+                        android:id="@+id/llSMS"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:src="@drawable/ic_share_sms"/>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="SMS"
+                            android:textColor="@color/textColorTertiary"
+                            android:textSize="16sp"
+                            fontPath = "@string/font_lato_regular"/>
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:src="@drawable/ic_chevron_right_grey"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="16dp"
+                        android:background="@color/light_border"/>
+
+                    <LinearLayout
+                        android:id="@+id/llWeChat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:src="@drawable/ic_share_wechat"/>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="WeChat"
+                            android:textColor="@color/textColorTertiary"
+                            android:textSize="16sp"
+                            fontPath = "@string/font_lato_regular"/>
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:src="@drawable/ic_chevron_right_grey"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="16dp"
+                        android:background="@color/light_border"/>
+
+                    <LinearLayout
+                        android:id="@+id/llEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:src="@drawable/ic_share_email"/>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Email"
+                            android:textColor="@color/textColorTertiary"
+                            android:textSize="16sp"
+                            fontPath = "@string/font_lato_regular"/>
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:src="@drawable/ic_chevron_right_grey"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="16dp"
+                        android:background="@color/light_border"/>
+
+                    <LinearLayout
+                        android:id="@+id/llCopy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:src="@drawable/ic_share_copy"/>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Copy link"
+                            android:textColor="@color/textColorTertiary"
+                            android:textSize="16sp"
+                            fontPath = "@string/font_lato_regular"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/light_border"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?selectableItemBackground"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvDone"
+            fontPath="@string/font_brandon_bold"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="DONE"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

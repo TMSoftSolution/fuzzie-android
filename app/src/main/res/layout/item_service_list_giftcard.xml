@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/item_service_list_giftcard_id"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+  android:background="#F5F5F5">
+
+  <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="16dp"
+      android:layout_marginRight="16dp"
+      android:layout_marginTop="10dp"
+      android:text="@string/giftcard"
+      android:textSize="11sp"
+      android:textColor="#9C9C9C"
+      fontPath="@string/font_brandon_bold" />
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_marginTop="8dp"
+      android:background="@color/lily_white"/>
+
+    <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@android:color/white">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:orientation="horizontal"
+        android:background="?attr/selectableItemBackground">
+
+        <ImageView
+          android:id="@+id/ivBrandImage"
+          android:layout_margin="@dimen/margin_medium"
+          android:layout_width="130dp"
+          android:layout_height="98dp" />
+
+        <LinearLayout
+          android:layout_weight="1"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginBottom="@dimen/margin_medium"
+          android:layout_marginTop="@dimen/margin_medium"
+          android:orientation="vertical">
+
+          <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvGiftCardName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="marquee"
+            android:textSize="15sp"
+            android:textColor="#424242"
+            android:text="Giftcard"
+            fontPath="fonts/Lato_Bold.ttf"
+            tools:text="GiftCard" />
+
+          <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvGiftCardPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:textSize="14sp"
+            android:textColor="@color/primary"
+            fontPath="fonts/Lato_Bold.ttf"
+            tools:text="$20 - $150" />
+
+        </LinearLayout>
+
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginRight="16dp"
+          android:src="@drawable/ic_chevron_right_grey" />
+
+      </LinearLayout>
+
+    </FrameLayout>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/lily_white"/>
+
+  </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="112dp"
+    android:id="@+id/item_coupon_id"
+    android:background="@color/colorJackpot">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/ivBrand"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="2dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/categories_placeholder"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvSoldOut"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_alignStart="@+id/ivBrand"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/ivBrand"
+        android:layout_marginTop="-10dp"
+        android:gravity="center"
+        android:text="SOLD OUT"
+        android:textColor="@color/white"
+        android:textSize="9sp"
+        fontPath="@string/font_brandon_black"
+        android:background="@drawable/bg_primary_2dp"
+        android:visibility="visible"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvCashback"
+        fontPath="@string/font_brandon_bold"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_alignStart="@+id/ivBrand"
+        android:layout_marginStart="15dp"
+        android:layout_below="@+id/ivBrand"
+        android:layout_marginTop="-10dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:background="@drawable/bg_cashbac_2dp"
+        android:drawableStart="@drawable/ic_cashback_white_small"
+        android:drawablePadding="0dp"
+        android:gravity="center"
+        android:text="1%"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:text="S$3.50"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        fontPath="@string/font_lato_bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/ivBrand"
+        android:layout_toStartOf="@+id/tvPrice"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvCouponName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25% discount coupon"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            fontPath="@string/font_lato_bold" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvTickets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="+1 FREE JACKPOT TICKET"
+            android:textColor="@color/colorJackpotYellow"
+            android:textSize="11sp"
+            fontPath="@string/font_brandon_black" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvBrandName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Foodpands"
+            android:textColor="@color/white"
+            android:alpha="0.6"
+            android:textSize="12sp"
+            fontPath="@string/font_lato_regular" />
+
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:alpha="0.1"/>
+
+    <ImageView
+        android:id="@+id/ivClubMember"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_club_member" />
+
+</RelativeLayout>

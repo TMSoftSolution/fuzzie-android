@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/background"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/textColorQuinary"
+        android:textSize="11dp"
+        android:textStyle="bold"
+        fontPath="@string/font_brandon_black"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="56dp"
+      android:background="@color/primary">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_arrow_back" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        fontPath="@string/font_brandon_bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:maxLines="1"
+        android:text="SIGN UP WITH EMAIL"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+  </RelativeLayout>
+
+  <android.support.v4.widget.NestedScrollView
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:overScrollMode="never">
+
+  <LinearLayout
+      android:id="@+id/llMain"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+
+          <android.support.v7.widget.CardView
+              android:layout_width="90dp"
+              android:layout_height="90dp"
+              android:layout_centerInParent="true"
+              app:cardBackgroundColor="@color/white"
+              app:cardCornerRadius="45dp"
+              app:cardElevation="4dp"
+              app:contentPadding="4dp">
+
+          <ImageView
+              android:id="@+id/ivProfilePic"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:src="@drawable/ic_profile_placeholder"/>
+
+          </android.support.v7.widget.CardView>
+
+
+          <ImageView
+              android:layout_width="36dp"
+              android:layout_height="36dp"
+              android:layout_alignParentBottom="true"
+              android:layout_alignParentRight="true"
+              android:elevation="8dp"
+              android:src="@drawable/ic_camera_circle_red"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="16dp">
+
+          <android.support.v7.widget.AppCompatTextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="8dp"
+              android:gravity="center"
+              android:text="Smile, add a photo!"
+              android:textColor="@color/textColorTertiary"
+              fontPath="@string/font_lato_bold"
+              android:textSize="16sp"/>
+
+          <android.support.v7.widget.AppCompatTextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Your photo will be attached together with the gifts you send."
+              android:textColor="@color/textColorQuinary"
+              fontPath="@string/font_lato_regular"
+              android:textSize="12sp"/>
+
+        </LinearLayout>
+      </LinearLayout>
+
+      <android.support.v7.widget.AppCompatTextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="16dp"
+          android:layout_marginBottom="10dp"
+          android:gravity="center"
+          android:text="YOUR ACCOUNT DETAILS"
+          android:textColor="#5F5E5E"
+          fontPath="@string/font_brandon_medium"
+          android:textSize="13sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="#1A000000" />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="16dp"
+          android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+          <android.support.v7.widget.AppCompatEditText
+              android:id="@+id/etFirstName"
+              fontPath="@string/font_lato_regular"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:layout_marginTop="10dp"
+              android:layout_marginBottom="10dp"
+              android:layout_marginEnd="16dp"
+              android:hint="First name"
+              android:inputType="textCapWords"
+              android:background="@android:color/transparent"
+              android:textColor="@color/textColorTertiary"
+              android:textSize="14sp" />
+
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="#1A000000" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+          <android.support.v7.widget.AppCompatEditText
+              android:id="@+id/etLastName"
+              fontPath="@string/font_lato_regular"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:layout_marginTop="10dp"
+              android:layout_marginBottom="10dp"
+              android:layout_marginEnd="16dp"
+              android:hint="Last name"
+              android:inputType="textCapWords"
+              android:background="@android:color/transparent"
+              android:textColor="@color/textColorTertiary"
+              android:textSize="14sp" />
+
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="#1A000000" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+          <android.support.v7.widget.AppCompatEditText
+              android:id="@+id/etEmail"
+              fontPath="@string/font_lato_regular"
+              android:layout_width="match_parent"
+              android:layout_height="30dp"
+              android:layout_marginTop="10dp"
+              android:layout_marginEnd="16dp"
+              android:hint="Email address"
+              android:inputType="textEmailAddress"
+              android:background="@android:color/transparent"
+              android:textColor="@color/textColorTertiary"
+              android:textSize="14sp" />
+
+          <android.support.v7.widget.AppCompatTextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="16dp"
+              android:text="We’ll send your order confirmation here."
+              android:textColor="@color/textColorFourth"
+              fontPath="@string/font_lato_italic"
+              android:textSize="11sp"/>
+
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="#1A000000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+          <com.scottyab.showhidepasswordedittext.ShowHidePasswordEditText
+              android:id="@+id/etPassword"
+              android:layout_width="match_parent"
+              android:layout_height="30dp"
+              android:layout_marginTop="10dp"
+              android:layout_marginEnd="16dp"
+              android:hint="Your password"
+              android:textSize="14sp"
+              android:textColor="@color/textColorTertiary"
+              android:background="@android:color/transparent"
+              android:inputType="textVisiblePassword"
+              fontPath="@string/font_lato_regular"/>
+
+          <android.support.v7.widget.AppCompatTextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="16dp"
+              android:text="At least 6 characters."
+              android:textColor="@color/textColorFourth"
+              fontPath="@string/font_lato_italic"
+              android:textSize="11sp"/>
+
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="#1A000000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+          <android.support.v7.widget.AppCompatTextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/bg_phone_prefix"
+              android:paddingTop="4dp"
+              android:paddingBottom="4dp"
+              android:paddingStart="10dp"
+              android:paddingEnd="10dp"
+              android:text="+65"
+              fontPath="@string/font_lato_regular"
+              android:textSize="14sp"
+              android:textColor="#A4A4A4"/>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="12dp"
+              android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/etPhone"
+                fontPath="@string/font_lato_regular"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:hint="Your mobile number"
+                android:inputType="number"
+                android:imeOptions="actionDone"
+                android:background="@android:color/transparent"
+                android:textColor="@color/textColorTertiary"
+                android:textSize="14sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Needed to activate your account and keep it secured. Available only for Singapore-based numbers."
+                android:textColor="@color/textColorFourth"
+                fontPath="@string/font_lato_italic"
+                android:textSize="11sp"/>
+
+          </LinearLayout>
+
+        </LinearLayout>
+
+      </LinearLayout>
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="#1A000000" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="OPTIONAL"
+        android:textColor="#5F5E5E"
+        fontPath="@string/font_brandon_medium"
+        android:textSize="13sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#1A000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+      <LinearLayout
+          android:id="@+id/llReferral"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="16dp"
+          android:orientation="vertical">
+
+        <sg.com.fuzzie.android.views.EditTextBackEvent
+            android:id="@+id/etReferralCode"
+            fontPath="@string/font_lato_regular"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:hint="Referral code"
+            android:inputType="text"
+            android:maxLines="1"
+            android:background="@android:color/transparent"
+            android:textColor="@color/textColorTertiary"
+            android:textSize="14sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Get your referral reward."
+            android:textColor="@color/textColorFourth"
+            fontPath="@string/font_lato_italic"
+            android:textSize="11sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#1A000000" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/llBirth"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="16dp"
+          android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/etBirth"
+            fontPath="@string/font_lato_regular"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:focusable="false"
+            android:hint="Your birthday"
+            android:inputType="none"
+            android:imeOptions="actionDone"
+            android:background="@android:color/transparent"
+            android:textColor="@color/textColorTertiary"
+            android:textSize="14sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="We'll give you a sweet birthday treat."
+            android:textColor="@color/textColorFourth"
+            fontPath="@string/font_lato_italic"
+            android:textSize="11sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#1A000000" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/llGender"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="16dp"
+          android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/etGender"
+            fontPath="@string/font_lato_regular"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:focusable="false"
+            android:hint="Gender"
+            android:inputType="none"
+            android:imeOptions="actionDone"
+            android:background="@android:color/transparent"
+            android:textColor="@color/textColorTertiary"
+            android:textSize="14sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="We’ll give you better recommendations."
+            android:textColor="@color/textColorFourth"
+            fontPath="@string/font_lato_italic"
+            android:textSize="11sp"/>
+
+      </LinearLayout>
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="#1A000000" />
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvJoin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?selectableItemBackground"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="0dp">
+
+      <android.support.v7.widget.AppCompatTextView
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          fontPath="@string/font_brandon_black"
+          android:textSize="14sp"
+          android:gravity="center"
+          android:text="CREATE MY ACCOUNT"
+          android:textAllCaps="true"
+          android:textColor="@color/white"/>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="By joining Fuzzie, you agree with the Bear's Privacy Policy and Terms and Conditions."
+        android:lineSpacingMultiplier="1.2"
+        android:textColor="@color/textColorTertiary"
+        fontPath="@string/font_lato_regular"
+        android:textSize="12sp"
+        android:textColorLink="@color/textColorTertiary"
+        />
+
+    </LinearLayout>
+
+  </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

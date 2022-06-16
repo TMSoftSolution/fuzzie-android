@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorJackpot">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/jackpot_logo_label"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        fontPath="@string/font_brandon_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:text="GREAT JOB!"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        fontPath="@string/font_lato_regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Your 4D numbers are locked in."
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvDigit"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:clipToPadding="false"
+        android:overScrollMode="never" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:foreground="?selectableItemBackground"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:id="@+id/llDrawTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="TIME LEFT BEFORE NEXT DRAW "
+                    android:letterSpacing="0.1"
+                    android:textSize="10sp"
+                    fontPath="@string/font_brandon_black"
+                    android:textColor="@color/textColorTertiary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvDays"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="00"
+                            android:textSize="38sp"
+                            fontPath="@string/font_lato_light"
+                            android:textColor="@color/textColorTertiary" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="DAYS"
+                            android:textSize="8sp"
+                            fontPath="@string/font_lato_regular"
+                            android:textColor="#BABABA" />
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text=":"
+                        android:textSize="16sp"
+                        fontPath="@string/font_lato_regular"
+                        android:textColor="#777777" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvHours"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="00"
+                            android:textSize="38sp"
+                            fontPath="@string/font_lato_light"
+                            android:textColor="@color/textColorTertiary" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="HOURS"
+                            android:textSize="8sp"
+                            fontPath="@string/font_lato_regular"
+                            android:textColor="#BABABA" />
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text=":"
+                        android:textSize="16sp"
+                        fontPath="@string/font_lato_regular"
+                        android:textColor="#777777" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvMins"
+                            fontPath="@string/font_lato_light"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="00"
+                            android:textColor="@color/textColorTertiary"
+                            android:textSize="38sp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="MIN"
+                            android:textSize="8sp"
+                            fontPath="@string/font_lato_regular"
+                            android:textColor="#BABABA" />
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text=":"
+                        android:textSize="16sp"
+                        fontPath="@string/font_lato_regular"
+                        android:textColor="#777777" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvSec"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="00"
+                            android:textSize="38sp"
+                            fontPath="@string/font_lato_light"
+                            android:textColor="@color/textColorTertiary" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="SEC"
+                            android:textSize="8sp"
+                            fontPath="@string/font_lato_regular"
+                            android:textColor="#BABABA" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="#E0E0E0"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ivSwitch"
+                        android:layout_width="51dp"
+                        android:layout_height="31dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/switch_on"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvNotify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="NOTIFY ME WHEN THE NEXT LIVE DRAW IS STARTING."
+                        android:textSize="12sp"
+                        fontPath="@string/font_brandon_black"
+                        android:textColor="@color/textColorTertiary" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?selectableItemBackground"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="0dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            fontPath="@string/font_brandon_black"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="DONE"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

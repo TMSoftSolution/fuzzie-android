@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:id="@+id/item_order_history_empty_id">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/baby_bear"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="NO ORDERS YET!"
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        fontPath="@string/font_brandon_black"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/text_order_history_empty"
+        android:textSize="13sp"
+        android:lineSpacingMultiplier="1.2"
+        fontPath="@string/font_lato_regular"
+        android:textAlignment="center"
+        android:textColor="@color/textColorTertiary"/>
+
+</LinearLayout>

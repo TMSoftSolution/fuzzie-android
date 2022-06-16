@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="@color/primary"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="FILTERS"
+            android:textSize="16sp"
+            fontPath="@string/font_brandon_black"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="Select all"
+            fontPath="@string/font_lato_bold"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@android:color/transparent"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginStart="16dp"
+                android:text="SORT BY"
+                android:textColor="#262626"
+                android:textSize="14sp"
+                fontPath="@string/font_brandon_black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/vDistance"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/bg_club_favorite_filter_selected">
+
+                    <ImageView
+                        android:id="@+id/ivDistance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_store_location_white"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvDistance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="DISTANCE"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        fontPath="@string/font_brandon_black" />
+
+                </LinearLayout>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="16dp"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:id="@+id/vRecent"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/bg_club_favorite_filter_unselected">
+
+                    <ImageView
+                        android:id="@+id/ivRecent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_recent_grey"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvRecent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="MOST RECENT"
+                        android:textColor="#939393"
+                        android:textSize="12sp"
+                        fontPath="@string/font_brandon_black" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginStart="16dp"
+                android:text="CATEGORIES"
+                android:textColor="#262626"
+                android:textSize="14sp"
+                fontPath="@string/font_brandon_black" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="16dp"
+                android:background="@color/light_border"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvCategories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:nestedScrollingEnabled="false"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="16dp"
+                android:text="More categories coming soon"
+                android:textColor="#ADADAD"
+                android:textSize="16sp"
+                fontPath="@string/font_lato_regular" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnFilter"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="APPLY FILTERS"
+        fontPath="@string/font_brandon_black"
+        android:textSize="13sp"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"/>
+
+</LinearLayout>

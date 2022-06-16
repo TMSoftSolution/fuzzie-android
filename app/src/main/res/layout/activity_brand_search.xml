@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+  <RelativeLayout
+      android:id="@+id/rlToolBar"
+      android:background="@color/primary"
+      android:layout_width="match_parent"
+      android:layout_height="56dp">
+
+    <LinearLayout
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+      <EditText
+          android:id="@+id/etSearch"
+          android:background="@color/colorPrimaryDark"
+          android:padding="8dp"
+          android:layout_gravity="center"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:hint="Search for a brand"
+          android:textColorHint="#AAFFFFFF"
+          android:textSize="14sp"
+          android:maxLines="1"
+          android:textColor="@color/white"/>
+
+      <android.support.v7.widget.AppCompatTextView
+          android:id="@+id/tvCancel"
+          android:layout_gravity="center"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="8dp"
+          android:layout_marginRight="8dp"
+          android:padding="8dp"
+          android:textColor="@color/white"
+          android:textSize="15sp"
+          fontPath="@string/font_brandon_regular"
+          android:text="Cancel" />
+
+    </LinearLayout>
+
+  </RelativeLayout>
+
+  <android.support.v7.widget.RecyclerView
+      android:id="@+id/rvSearch"
+      android:layout_below="@+id/rlToolBar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/margin_mini"
+      android:orientation="vertical"
+      app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+      tools:listitem="@layout/item_brand_search"
+      android:visibility="visible"
+      />
+
+  <LinearLayout
+      android:id="@+id/llEmpty"
+      android:orientation="vertical"
+      android:layout_below="@+id/rlToolBar"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:visibility="gone">
+
+      <android.support.v7.widget.AppCompatTextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/oops"
+          android:textColor="@color/colorPrimary"
+          android:textSize="16sp"
+          fontPath="@string/font_brandon_black"
+          android:layout_gravity="center"
+          android:layout_marginTop="60dp"
+          />
+
+    <ImageView
+        android:id="@+id/iv_bear"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/bear_dead"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="@string/search_no_result"
+        android:textColor="@color/textColorTertiary"
+        android:textSize="13sp"
+        fontPath="@string/font_lato_regular"
+        />
+
+  </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_liker_id"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/avatar"
+        />
+    <ImageView
+        android:id="@+id/liker_facebook"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_liker_facebook"
+        android:layout_marginTop="-20dp"
+        android:layout_marginLeft="25dp"
+        />
+</LinearLayout>

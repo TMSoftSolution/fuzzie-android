@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_facebook_friend_id"
+    android:layout_width="wrap_content"
+    android:layout_height="60dp"
+    android:layout_marginStart="16dp"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/avatar_bear_1"/>
+
+    <ImageView
+        android:id="@+id/liker_facebook"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_liker_facebook"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/avatar"
+        android:layout_marginStart="10dp"
+        android:textSize="14sp"
+        android:textColor="@color/textColorTertiary"
+        fontPath="@string/font_lato_bold"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvBirth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="16dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:textColor="#A4A4A4"
+        android:textSize="12sp"
+        fontPath="@string/font_lato_regular"
+        />
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_border"/>
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "748668593720",
+    "firebase_url": "https://fuzzie-e5a98.firebaseio.com",
+    "project_id": "fuzzie-e5a98",
+    "storage_bucket": "fuzzie-e5a98.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:748668593720:android:a3c1c7743604a7f8",
+        "android_client_info": {
+          "package_name": "sg.com.fuzzie.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "748668593720-bvd7o71hr7v832gbmkb9oc3a6kbpcksr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "sg.com.fuzzie.android",
+            "certificate_hash": "99AEDE1DDD78EE56108360F2F0314D688CB2413E"
+          }
+        },
+        {
+          "client_id": "748668593720-288a8f0pfanqs78g441rmd9p55olnb33.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCVK85AMF6AtqhZQhTeVw3_rdwb6bKj5s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "748668593720-288a8f0pfanqs78g441rmd9p55olnb33.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

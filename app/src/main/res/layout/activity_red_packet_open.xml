@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bg_red_packet_open"
+                    android:scaleType="fitXY"/>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/image_red_packet"/>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/ivAvatar"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-30dp"
+                android:src="@drawable/ic_profile_placeholder"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:text="Rachel Tan"
+                android:textSize="14sp"
+                fontPath="@string/font_lato_bold"
+                android:textAlignment="center"
+                android:textColor="@color/textColorTertiary" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:text="With luck and prosperity, hope you enjoy it ! See you soon my friend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida laoreet nibh, elementum blandit mi finibus quis. Curabitur sapien nibh, placerat nec neque "
+                android:textSize="14sp"
+                fontPath="@string/font_lato_italic"
+                android:lineSpacingMultiplier="1.2"
+                android:textAlignment="center"
+                android:textColor="@color/textColorTertiary" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvOpen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?selectableItemBackground"
+                app:cardBackgroundColor="@color/primary"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="0dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    fontPath="@string/font_brandon_black"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text="OPEN LUCKY PACKET"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_back"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:text="LUCKY PACKET"
+            android:maxLines="1"
+            android:textSize="16sp"
+            fontPath="@string/font_brandon_bold"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

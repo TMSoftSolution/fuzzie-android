@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:background="@drawable/code_success_red" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/cvDone"
+        android:gravity="center">
+
+
+        <ImageView
+            android:id="@+id/ivCircle"
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/success_circle"/>
+
+        <ImageView
+            android:id="@+id/ivLightning"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_big_tick_white"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/ivLightning"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"
+            android:text="SUCCESSFULLY REDEEMED"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            fontPath="@string/font_brandon_black"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_below="@+id/tvTitle"
+            android:textAlignment="center"
+            android:text="Thanks for using Fuzzie!"
+            android:textColor="#000000"
+            android:alpha="0.4"
+            android:textSize="16sp"
+            fontPath="@string/font_lato_bold"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cvDone"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Transaction No"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            fontPath="@string/font_lato_regular"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvOrderNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="9dp"
+            android:text="123231"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            fontPath="@string/font_lato_regular"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?selectableItemBackground"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="0dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvDone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            fontPath="@string/font_brandon_black"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:text="DONE"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"/>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

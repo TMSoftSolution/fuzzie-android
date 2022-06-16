@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_club_flash_list_id"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="25dp"
+    android:layout_marginEnd="25dp"
+    android:layout_marginTop="10dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/ivOffer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/brands_placeholder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintDimensionRatio="9:5"
+        app:riv_corner_radius="4dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="@+id/ivOffer"
+        app:layout_constraintStart_toStartOf="@id/ivOffer"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_club_flash_clock"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            fontPath="@string/font_lato_bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            android:lines="1"
+            android:ellipsize="end"
+            android:text="End in 20 days"
+            android:textColor="@color/white"
+            android:textSize="11sp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivOffer"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/ivCategory"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/ic_category_1_white"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvCategory"
+            fontPath="@string/font_lato_regular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            android:lines="1"
+            android:ellipsize="end"
+            android:text="Tanuki Raw"
+            android:textColor="@color/white"
+            android:textSize="11sp"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

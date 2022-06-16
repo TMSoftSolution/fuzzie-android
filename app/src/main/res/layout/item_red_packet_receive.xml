@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:id="@+id/item_red_packet_receive"
+    android:background="@color/white">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivAvatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_profile_placeholder"
+        app:civ_border_width="0dp"
+        app:civ_border_color="@color/colorJackpotYellow"/>
+
+    <View
+        android:id="@+id/redMark"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_toEndOf="@+id/ivAvatar"
+        android:layout_alignBottom="@+id/ivAvatar"
+        android:layout_marginBottom="2.5dp"
+        android:layout_marginStart="-7.5dp"
+        android:background="@drawable/bg_badge_count"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/ivAvatar"
+        android:layout_marginStart="16dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rachel Tan"
+            android:textColor="@color/textColorTertiary"
+            android:textSize="14sp"
+            fontPath="@string/font_lato_bold"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Received today"
+            android:textColor="#B2B2B2"
+            android:textSize="12sp"
+            fontPath="@string/font_lato_regular"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnOpen"
+        android:layout_width="45dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:text="OPEN"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        fontPath="@string/font_brandon_black"
+        android:background="@drawable/bg_badge_count"/>
+
+    <ImageView
+        android:id="@+id/ivArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_gray_arrow"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lily_white"/>
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#AA000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_fz_alert">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@drawable/bg_fz_alert_top"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivBear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/ic_bear_bowtie_white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                fontPath="@string/font_lato_regular"
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvBody"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a efficitur."
+                android:textColor="#BBBBBB"
+                android:textSize="12sp"
+                fontPath="@string/font_lato_regular"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:background="#E5E5E5"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp">
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btnOK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text=""
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13sp"
+                    fontPath="@string/font_lato_bold"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btnCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/btnOK"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:layout_marginEnd="4dp"
+                    android:text=""
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13sp"
+                    fontPath="@string/font_lato_bold"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

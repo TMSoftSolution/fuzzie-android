@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_club_store_fine_print_id"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:orientation="horizontal">
+
+    <View
+        android:layout_width="4dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_primary_2dp"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvPrint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Valid for first time customer and those who have not visited for the past 12 months."
+        android:lineSpacingMultiplier="1.2"
+        android:textColor="#3D3D3D"
+        android:textSize="13sp"
+        fontPath="@string/font_lato_regular"
+        />
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_bag_id"
+    android:layout_height="130dp"
+    android:background="@color/white"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rlCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/ivSelected"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icn_unselected" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:layout_marginLeft="10dp">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/ivBackground"
+                android:layout_width="130dp"
+                android:layout_height="98dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/brands_placeholder"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvCashback"
+                fontPath="@string/font_brandon_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="85dp"
+                android:background="@drawable/discount_blue_bg"
+                android:drawableStart="@drawable/ic_cashback_white_16dp"
+                android:drawablePadding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="3dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="3dp"
+                android:text="10%"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvBrandName"
+                fontPath="@string/font_lato_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:text="BRAND NAME"
+                android:textAllCaps="false"
+                android:textColor="#434343"
+                android:textSize="13sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvGiftPrice"
+                fontPath="@string/font_lato_bold"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="S$100"
+                android:textColor="@color/primary"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lily_white"
+        android:visibility="visible" />
+
+</RelativeLayout>

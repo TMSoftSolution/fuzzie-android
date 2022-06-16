@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/id_red_packet_quantity_activity"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:background="@color/primary"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_back"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LUCKY PACKET QUANTITY"
+            android:maxLines="1"
+            android:textSize="16sp"
+            fontPath="@string/font_brandon_bold"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:padding="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Help?"
+            android:textColor="@color/white"
+            fontPath="@string/font_lato_bold"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:textAlignment="center"
+            android:text="HOW MANY LUCKY PACKETS DO YOU WISH TO SEND?"
+            android:textSize="14sp"
+            android:textColor="@color/textColorTertiary"
+            fontPath="@string/font_brandon_black"/>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/etQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="16dp"
+            android:textAlignment="center"
+            android:textSize="60sp"
+            android:hint="0"
+            android:textColor="@color/textColorTertiary"
+            android:textColorHint="@color/textColorTertiary"
+            android:maxLines="1"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            fontPath="@string/font_lato_bold"
+            android:background="@android:color/transparent"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            fontPath="@string/font_lato_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="Lucky Packet quantity"
+            android:textColor="@color/textColorTertiary"
+            android:textSize="13sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Each person will receive 1 packet"
+            android:textSize="11sp"
+            android:textColor="#C4C4C4"
+            fontPath="@string/font_lato_bold"/>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="40sp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="0dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                fontPath="@string/font_brandon_black"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="NEXT"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

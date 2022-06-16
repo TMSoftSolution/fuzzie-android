@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="sg.com.fuzzie.android">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission
+        android:name="android.permission.INTERACT_ACROSS_USERS_FULL"
+        android:protectionLevel="normal"/>
+    <uses-permission android:name="com.nets.netspay.QR_TRANSACTION"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <application android:name=".FuzzieApplication_"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:vmSafeMode="true"
+        tools:replace="android:theme">
+
+        <meta-data android:name="io.fabric.ApiKey"
+            android:value="da4bbd37e9dc3b6169c38d48f72dd62def7388c1" />
+        <meta-data android:name="android.max_aspect"
+            android:value="ratio_float"/>
+
+        <activity android:name=".SplashActivity_"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity_"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="fuzzie" android:host="beta.fuzzie.com.sg"/>
+                <data android:scheme="fuzzie" android:host="fuzzie.com.sg"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".core.BaseActivity_" />
+        <activity android:name=".WebActivity_" />
+
+        <activity android:name=".ui.auth.LandingActivity_"
+            android:theme="@style/AppTheme.FullScreen"/>
+        <activity android:name=".ui.auth.JoinActivity_" />
+        <activity android:name=".ui.auth.TutorialActivity_" />
+        <activity android:name=".ui.auth.LoginActivity_"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.auth.ForgetActivity_"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.auth.SignUpActivity_"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.auth.OTPActivity_"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.auth.VerificationCodeActivity_"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".ui.auth.ReferralCodeActivateActivity_"
+            android:theme="@style/AppTheme.FullScreen"/>
+
+        <activity android:name=".ui.shop.CategoriesActivity_" />
+        <activity android:name=".ui.shop.BrandSearchActivity_" />
+        <activity android:name=".ui.shop.BrandsListActivity_" />
+        <activity android:name=".ui.shop.BrandGiftActivity_"
+            android:theme="@style/AppTheme.TransparentStatusBar" />
+        <activity android:name=".ui.shop.BrandServiceActivity_"
+            android:theme="@style/AppTheme.TransparentStatusBar" />
+        <activity android:name=".ui.shop.BrandServiceListActivity_" />
+        <activity android:name=".ui.shop.BrandTermsActivity_" />
+        <activity android:name=".ui.shop.BrandRedeemDetailsActivity_" />
+        <activity android:name=".ui.shop.BrandStoreLocationsActivity_" />
+        <activity android:name=".ui.shop.CashbackInfoActivity_"
+            android:theme="@style/AppTheme.FullScreen"/>
+        <activity android:name=".ui.shop.BrandLikersActivity_"/>
+        <activity android:name=".ui.shop.GiftingAvailabeActivity_"/>
+        <activity android:name=".ui.shop.CampaignDetailsActivity_"/>
+
+        <activity android:name=".ui.shop.filter.BrandListSortActivity_"/>
+        <activity android:name=".ui.shop.filter.BrandListCategoryRefineActivity_"/>
+        <activity android:name=".ui.shop.filter.BrandListRefineActivity_"/>
+
+        <activity android:name=".ui.gift.GiftItActivity_"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".ui.gift.DeliveryMethodsActivity_"/>
+        <activity android:name=".ui.gift.EmailSendActivity_"/>
+        <activity android:name=".ui.gift.GiftItHowItWorksActivity_"/>
+
+        <activity android:name=".ui.shop.BanksActivity_" />
+        <activity android:name=".ui.shop.CreditCardsActivity_" />
+        <activity android:name=".ui.shop.CreditCardActivity_" />
+        <activity android:name=".ui.shop.CreditCardTermsActivity_" />
+
+        <activity android:name=".ui.payments.ShoppingBagActivity_" />
+        <activity android:name=".ui.payments.CheckoutActivity_" />
+        <activity android:name=".ui.payments.PaymentActivity_" />
+        <activity android:name=".ui.payments.PaymentMethodsActivity_" />
+        <activity android:name=".ui.payments.AddPaymentMethodActivity_" />
+        <activity android:name=".ui.payments.PaymentSuccessActivity_" />
+        <activity android:name=".ui.payments.EmptyBagActivity_"/>
+        <activity android:name=".ui.payments.TopUpPaymentActivity_"/>
+
+        <activity android:name=".ui.activate.CodeActivity_"/>
+        <activity android:name=".ui.activate.ActivateSuccessActivity_"
+            android:theme="@style/AppTheme.FullScreen"/>
+        <activity android:name=".ui.activate.ActivateSuccessJackpotActivity_"
+            android:theme="@style/AppTheme.FullScreen"/>
+
+        <activity android:name=".ui.giftbox.GiftBoxActivity_"/>
+        <activity android:name=".ui.giftbox.GiftRedeemSuccessActivity_" />
+        <activity android:name=".ui.giftbox.GiftCardActivity_"
+            android:theme="@style/AppTheme.TransparentStatusBar"/>
+        <activity android:name=".ui.giftbox.GiftPackageActivity_"
+            android:theme="@style/AppTheme.TransparentStatusBar"/>
+        <activity android:name=".ui.giftbox.GiftRedeemPhysicalActivity_"/>
+        <activity android:name=".ui.giftbox.GiftRedeemOnlineActivity_"/>
+        <activity android:name=".ui.giftbox.SentGiftCardActivity_"
+            android:theme="@style/AppTheme.TransparentStatusBar"/>
+        <activity android:name=".ui.giftbox.SentGiftPackageActivity_"
+            android:theme="@style/AppTheme.TransparentStatusBar"/>
+        <activity android:name=".ui.giftbox.GiftEditActivity_"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".ui.giftbox.PowerUpGiftCardActivity_"
+            android:theme="@style/AppTheme.TransparentStatusBar"/>
+        <activity android:name=".ui.giftbox.GiftRedeemGPSActivity_"/>
+        <activity android:name=".ui.giftbox.GiftStoreLocationVerifyActivity_"
+            android:theme="@style/AppTheme.FullScreen"/>
+
+        <activity android:name=".ui.me.SettingsActivity_" />
+        <activity android:name=".ui.me.InviteFriendsActivity_">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="sg.com.fuzzie.android.invite"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.me.ReferralActivity_"/>
+        <activity android:name=".ui.me.ReferralsActivity_"/>
+        <activity android:name=".ui.me.MyFriendsListActivity_"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".ui.me.profile.EditProfileActivity_"/>
+        <activity android:name=".ui.me.profile.EditPasswordActivity_"/>
+        <activity android:name=".ui.me.profile.EditProfilePicActivity_"/>
+        <activity android:name=".ui.me.profile.EditEmailActivity_"/>
+
+        <activity android:name=".ui.me.history.OrderHistoryActivity_"/>
+        <activity android:name=".ui.me.history.OrderDetailsActivity_"/>
+
+        <activity android:name=".ui.likes.LikerProfileActivity_"/>
+        <activity android:name=".ui.likes.UserProfilePhotoActivity_"/>
+
+        <activity android:name=".ui.nearby.NearByFilterActivity_"/>
+
+        <activity android:name=".ui.rate.RateExperienceActivity_"
+            android:theme="@style/AppTheme.FullScreen"/>
+        <activity android:name=".ui.rate.RateThanksActivity_"
+            android:theme="@style/AppTheme.FullScreen"/>
+        <activity android:name=".ui.rate.RateSorryActivity_"
+            android:theme="@style/AppTheme.FullScreen"/>
+
+        <activity android:name=".ui.shop.topup.TopUpActivity_"/>
+        <activity android:name=".ui.shop.topup.TopUpEnterActivity_"/>
+
+        <activity android:name=".ui.jackpot.JackpotHomeActivity_"
+            android:theme="@style/AppTheme.Jackpot"/>
+        <activity android:name=".ui.jackpot.JackpotLearnMoreActvity_"/>
+        <activity android:name=".ui.jackpot.JackpotCouponActivity_"
+            android:theme="@style/AppTheme.TransparentStatusBar"/>
+        <activity android:name=".ui.jackpot.JackpotChooseActivity_"
+            android:theme="@style/AppTheme.FullScreen"/>
+        <activity android:name=".ui.jackpot.JackpotDigitEnterActivity_"
+            android:theme="@style/AppTheme.Jackpot"/>
+        <activity android:name=".ui.jackpot.JackpotPaymentActivity_"/>
+        <activity android:name=".ui.jackpot.JackpotPaymentSuccessActivity_"
+            android:theme="@style/AppTheme.FullScreen"/>
+        <activity android:name=".ui.jackpot.JackpotDrawHistoryActivity_"
+            android:theme="@style/AppTheme.Jackpot"/>
+        <activity android:name=".ui.jackpot.JackpotBrandCouponListActivity_"/>
+        <activity android:name=".ui.jackpot.JackpotTicketsActivity_"/>
+        <activity android:name=".ui.jackpot.JackpotIsLiveActivity_"
+            android:theme="@style/AppTheme.FullScreen"/>
+        <activity android:name=".ui.jackpot.JackpotLiveActivity_"
+            android:theme="@style/AppTheme.Jackpot"/>
+        <activity android:name=".ui.jackpot.JackpotLiveWonActivity_"
+            android:theme="@style/AppTheme.FullScreen"/>
+        <activity android:name=".ui.jackpot.JackpotSwipeIntroActivity_"
+            android:theme="@style/AppTheme.FullScreen"/>
+        <activity android:name=".ui.jackpot.JackpotTicketSetActivity_"
+            android:theme="@style/AppTheme.Jackpot"/>
+        <activity android:name=".ui.jackpot.JackpotTicketSetSuccessActivity_"
+            android:theme="@style/AppTheme.Jackpot"/>
+        <activity android:name=".ui.jackpot.PowerUpPackActivity_"
+            android:theme="@style/AppTheme.Jackpot"/>
+        <activity android:name=".ui.jackpot.PowerUpCouponActivity_"
+            android:theme="@style/AppTheme.TransparentStatusBar"/>
+
+        <activity android:name=".ui.update.ForceUpdateActivity_"
+            android:theme="@style/AppTheme.FullScreen"/>
+
+        <activity android:name=".ui.redpacket.RedPacketActivity_"
+            android:theme="@style/RedPacketTheme"/>
+        <activity android:name=".ui.redpacket.RedPacketQuantityActivity_"/>
+        <activity android:name=".ui.redpacket.RedPacketItemsAddActivity_"/>
+        <activity android:name=".ui.redpacket.RedPacketAddMessageActivity_"/>
+        <activity android:name=".ui.redpacket.RedPacketTicketAddActivity_"/>
+        <activity android:name=".ui.redpacket.RedPacketCreditAddActivity_"/>
+        <activity android:name=".ui.redpacket.RedPacketPaymentActivity_"/>
+        <activity android:name=".ui.redpacket.RedPacketPaymentSuccessActivity_"
+            android:theme="@style/RedPacketTheme"/>
+        <activity android:name=".ui.redpacket.RedPacketPaymentSuccessJackpotActivity_"
+            android:theme="@style/AppTheme.Jackpot"/>
+        <activity android:name=".ui.redpacket.RedPacketDeliverActivity_"/>
+        <activity android:name=".ui.redpacket.RedPacketHistoryActivity_"/>
+        <activity android:name=".ui.redpacket.RedPacketOpenActivity_"
+            android:theme="@style/RedPacketTheme"/>
+        <activity android:name=".ui.redpacket.RedPacketReceiveDetailActivity_"/>
+        <activity android:name=".ui.redpacket.RedPacketSentDetailActivity_"/>
+        <activity android:name=".ui.redpacket.RedPacketOpenSuccessActivity_"
+            android:theme="@style/RedPacketTheme"/>
+        <activity android:name=".ui.redpacket.RedPacketChampionActivity_"
+            android:theme="@style/RedPacketTheme"/>
+
+        <activity android:name=".ui.club.ClubSubscribeActivity_"
+            android:theme="@style/AppTheme.FullScreen"/>
+        <activity android:name=".ui.club.ClubSubscribePaymentActivity_"/>
+        <activity android:name=".ui.club.ClubSubscribeSuccessActivity_"
+            android:theme="@style/AppTheme.FullScreen"/>
+        <activity android:name=".ui.club.ClubSettingActivity_"/>
+        <activity android:name=".ui.club.ClubOfferActivity_"
+            android:theme="@style/AppTheme.TransparentStatusBar"/>
+        <activity android:name=".ui.club.ClubReferralActivity_"/>
+        <activity android:name=".ui.club.ClubStoreListActivity_"/>
+        <activity android:name=".ui.club.ClubStoreActivity_"
+            android:theme="@style/AppTheme.TransparentStatusBar" />
+        <activity android:name=".ui.club.ClubStoresLocationActivity_"/>
+        <activity android:name=".ui.club.ClubFavoriteActivity_"/>
+        <activity android:name=".ui.club.ClubCategoryActivity_"/>
+        <activity android:name=".ui.club.ClubSubCategoryActivity_"/>
+        <activity android:name=".ui.club.ClubSubCategoryFilterActivity_"/>
+        <activity android:name=".ui.club.ClubSearchActivity_"/>
+        <activity android:name=".ui.club.ClubPlaceStoreListActivity_"/>
+        <activity android:name=".ui.club.ClubFilterActivity_"/>
+        <activity android:name=".ui.club.ClubFavoriteFilterActivity_"/>
+        <activity android:name=".ui.club.ClubOfferRedeemActivity_"/>
+        <activity android:name=".ui.club.ClubOfferOnlineRedeemActivity_"/>
+        <activity android:name=".ui.club.ClubOfferRedeemSuccessActivity_"
+            android:theme="@style/AppTheme.FullScreen"/>
+        <activity android:name=".ui.club.LocationEnableActivity_"
+            android:theme="@style/AppTheme.FullScreen"/>
+        <activity android:name=".ui.club.ClubLocationConfirmActivity_"
+            android:theme="@style/AppTheme.FullScreen"/>
+
+
+        <!-- Facebook Integration -->
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+
+        <activity android:name="com.facebook.CustomTabActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <provider android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider348869791858116"
+            android:exported="true" />
+
+        <!-- FCM -->
+        <service android:name=".services.MyFcmListenerService" android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".services.MyFirebaseInstanceIDService_">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- Set custom default icon. This is used when no icon is set for incoming notification messages.
+         See README(https://goo.gl/l4GJaQ) for more. -->
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_bear_bowtie" />
+        <!-- Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more. -->
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <service android:name=".services.LocationService"/>
+
+        <!--Enable BOOT_COMPLETED-->
+        <!--<receiver android:name=".receiver.AlarmBootReceiver"-->
+            <!--android:enabled="true">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.BOOT_COMPLETED"/>-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <receiver android:name=".receiver.FuzzieLiveDrawAlarmReceiver">
+            <intent-filter>
+                <action android:name="fuzzie.com.sg.JACKPOT_NOTIFICATION"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".receiver.BirthdayAlarmReceiver">
+            <intent-filter>
+                <action android:name="fuzzie.com.sg.BIRTHDAY_NOTIFICATION"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

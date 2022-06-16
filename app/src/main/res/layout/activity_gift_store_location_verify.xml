@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_activity_gift_store_location"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:padding="10dp"
+        android:layout_gravity="end"
+        android:src="@drawable/ic_close_white"
+        android:tint="@color/colorPrimary"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_switch_location"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            fontPath="@string/font_lato_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:textAlignment="center"
+            android:text="Are you at this outlet?"
+            android:textColor="@color/textColorTertiary"
+            android:textSize="20sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvStoreName"
+            fontPath="@string/font_lato_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textAlignment="center"
+            android:text="Joo Chiat"
+            android:textColor="@color/textColorTertiary"
+            android:textSize="18sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvStoreAddress"
+            fontPath="@string/font_lato_regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textAlignment="center"
+            android:text="Blk 4 Changi Village Road  #01-2084 Singapore 500004"
+            android:lineSpacingMultiplier="1.2"
+            android:textColor="@color/textColorQuinary"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvContinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="4dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                fontPath="@string/font_brandon_black"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="YES, CONTINUE"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnChange"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:text="No, change outlet"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimary"
+            android:background="@color/colorTransparent"
+            fontPath="@string/font_lato_bold"/>
+
+    </LinearLayout>
+
+</LinearLayout>

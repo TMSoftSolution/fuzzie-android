@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_club_filter_type_id"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:text="Burgers"
+        android:textColor="@color/textColorTertiary"
+        android:textSize="14sp"
+        fontPath="@string/font_lato_bold" />
+
+    <ImageView
+        android:id="@+id/ivCheck"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/bg_filter_type_unselected"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_border"/>
+
+</RelativeLayout>

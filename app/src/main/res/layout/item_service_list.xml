@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/item_service_list_id"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:paddingTop="@dimen/margin_medium"
+  android:orientation="vertical"
+  android:background="?attr/selectableItemBackground">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvPackageName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginEnd="40dp"
+        android:textColor="#424242"
+        android:textSize="14sp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        fontPath="@string/font_lato_bold"
+        tools:text="Botanical Energy(1 Hour)" />
+
+    <android.support.v7.widget.AppCompatTextView
+      android:id="@+id/tvPrice"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/tvPackageName"
+      android:layout_marginTop="8dp"
+      android:layout_marginLeft="@dimen/margin_medium"
+      android:layout_marginRight="@dimen/margin_medium"
+      android:textColor="@color/colorPrimary"
+      android:textSize="14sp"
+      fontPath="@string/font_lato_bold"
+      tools:text="S$100" />
+
+    <!--//Use tv.setPaintFlags(tv.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG); to set strikethrough-->
+    <android.support.v7.widget.AppCompatTextView
+      android:id="@+id/tvStrikePrice"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/tvPackageName"
+      android:layout_toRightOf="@id/tvPrice"
+      android:layout_alignTop="@id/tvPrice"
+      android:layout_alignBottom="@id/tvPrice"
+      android:layout_marginLeft="@dimen/margin_small"
+      android:gravity="center_vertical"
+      android:textColor="#adadad"
+      android:textSize="13sp"
+      fontPath="@string/font_lato_regular"
+      tools:text="S$100" />
+
+    <android.support.v7.widget.AppCompatTextView
+      android:id="@+id/tvSoldOut"
+      fontPath="@string/font_brandon_black"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toLeftOf="@+id/ivChevron"
+      android:layout_centerVertical="true"
+      android:layout_marginRight="8dp"
+      android:paddingLeft="4dp"
+      android:paddingRight="4dp"
+      android:paddingTop="2dp"
+      android:paddingBottom="1dp"
+      android:gravity="center"
+      android:textAlignment="center"
+      android:lines="1"
+      android:text="SOLD OUT"
+      android:textAllCaps="true"
+      android:textColor="@color/white"
+      android:background="@drawable/bg_giftcard_soldout"
+      android:textSize="7sp"
+      android:visibility="gone"/>
+
+    <ImageView
+      android:id="@+id/ivChevron"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginRight="@dimen/margin_medium"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:src="@drawable/ic_chevron_right_grey" />
+
+    <View
+      android:layout_below="@id/tvPrice"
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_marginTop="@dimen/margin_medium"
+      android:layout_marginLeft="@dimen/margin_medium"
+      android:background="@color/lily_white" />
+
+</RelativeLayout>

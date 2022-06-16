@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/code_success_red"/>
+
+    <ImageView
+        android:id="@+id/ivCircle"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/success_circle"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvCredits"
+        fontPath="@string/font_lato_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="165dp"
+        android:text="+S$20"
+        android:textColor="@color/white"
+        android:textSize="60sp" />
+
+    <ImageView
+        android:id="@+id/ivPresent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:src="@drawable/present_icon"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        fontPath="@string/font_brandon_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_centerHorizontal="true"
+        android:text="YOUR GIFT CARD HAS BEEN ADDED TO YOUR GIFT BOX"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:layout_below="@+id/ivPresent"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvDescription"
+        fontPath="fonts/Lato_Regular.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:textAlignment="center"
+        android:text="Great job, "
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_below="@+id/tvTitle"
+        android:layout_centerHorizontal="true" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvDone"
+        fontPath="@string/font_brandon_black"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:clickable="true"
+        android:background="@drawable/white_bg"
+        android:text="GO TO MY WALLET"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp" />
+
+</RelativeLayout>

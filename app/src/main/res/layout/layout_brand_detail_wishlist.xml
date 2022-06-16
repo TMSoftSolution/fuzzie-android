@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginEnd="@dimen/margin_medium"
+    android:layout_marginLeft="@dimen/margin_medium"
+    android:layout_marginRight="@dimen/margin_medium"
+    android:layout_marginStart="@dimen/margin_medium"
+    android:layout_marginTop="@dimen/margin_medium"
+    android:orientation="vertical"
+    >
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/margin_medium"
+      android:text="@string/txt_wish_listed_by"
+      android:textColor="@color/textColorPrimary"
+      android:textSize="@dimen/material_text_subhead"
+      android:textStyle="bold"
+      fontPath="@string/font_brandon_bold"
+      tools:ignore="MissingPrefix"
+      />
+
+
+  <android.support.percent.PercentRelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:orientation="horizontal"
+      >
+
+    <android.support.percent.PercentFrameLayout
+        android:id="@+id/frame_pic_one"
+        android:layout_height="match_parent"
+        app:layout_widthPercent="16.66%"
+
+        >
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:id="@+id/pic_one"
+          android:layout_height="match_parent"
+          android:layout_gravity="start"
+          android:src="@color/cardview_dark_background"
+          app:layout_aspectRatio="100%"
+          app:layout_widthPercent="88%"
+          />
+
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:id="@+id/pic_badge_one"
+          android:layout_height="32dp"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentRight="true"
+          android:layout_gravity="bottom|right"
+          android:src="@color/colorPrimary"
+          app:civ_border_color="@android:color/white"
+          app:civ_border_width="2dp"
+          app:layout_widthPercent="44%"
+          />
+
+    </android.support.percent.PercentFrameLayout>
+
+    <android.support.percent.PercentFrameLayout
+        android:id="@+id/frame_pic_two"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/frame_pic_one"
+        app:layout_widthPercent="16.66%"
+        >
+
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:id="@+id/pic_two"
+          android:layout_height="match_parent"
+          android:layout_gravity="start"
+          android:src="@color/cardview_dark_background"
+          app:layout_aspectRatio="100%"
+          app:layout_widthPercent="88%"
+          />
+
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:id="@+id/pic_badge_two"
+          android:layout_height="32dp"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentRight="true"
+          android:layout_gravity="bottom|right"
+          android:src="@color/colorPrimary"
+          app:civ_border_color="@android:color/white"
+          app:civ_border_width="2dp"
+          app:layout_widthPercent="44%"
+          />
+
+    </android.support.percent.PercentFrameLayout>
+
+    <android.support.percent.PercentFrameLayout
+        android:id="@+id/frame_pic_three"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/frame_pic_two"
+        app:layout_widthPercent="16.66%"
+        >
+
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:id="@+id/pic_three"
+          android:layout_height="match_parent"
+          android:layout_gravity="start"
+          android:src="@color/cardview_dark_background"
+          app:layout_aspectRatio="100%"
+          app:layout_widthPercent="88%"
+          />
+
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:id="@+id/pic_badge_three"
+          android:layout_height="32dp"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentRight="true"
+          android:layout_gravity="bottom|right"
+          android:src="@color/colorPrimary"
+          app:civ_border_color="@android:color/white"
+          app:civ_border_width="2dp"
+          app:layout_widthPercent="44%"
+          />
+
+
+    </android.support.percent.PercentFrameLayout>
+
+    <android.support.percent.PercentFrameLayout
+        android:id="@+id/frame_pic_four"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/frame_pic_three"
+        app:layout_widthPercent="16.66%"
+        >
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:id="@+id/pic_four"
+          android:layout_height="match_parent"
+          android:layout_gravity="start"
+          android:src="@color/cardview_dark_background"
+          app:layout_aspectRatio="100%"
+          app:layout_widthPercent="88%"
+          />
+
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:id="@+id/pic_badge_four"
+          android:layout_height="32dp"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentRight="true"
+          android:layout_gravity="bottom|right"
+          android:src="@color/colorPrimary"
+          app:civ_border_color="@android:color/white"
+          app:civ_border_width="2dp"
+          app:layout_widthPercent="44%"
+          />
+
+    </android.support.percent.PercentFrameLayout>
+
+    <android.support.percent.PercentFrameLayout
+        android:id="@+id/frame_pic_five"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/frame_pic_four"
+        app:layout_widthPercent="16.66%"
+        >
+
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:id="@+id/pic_five"
+          android:layout_height="match_parent"
+          android:layout_gravity="start"
+          android:src="@color/cardview_dark_background"
+          app:layout_aspectRatio="100%"
+          app:layout_widthPercent="88%"
+          />
+
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:id="@+id/pic_badge_five"
+          android:layout_height="32dp"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentRight="true"
+          android:layout_gravity="bottom|right"
+          android:src="@color/colorPrimary"
+          app:civ_border_color="@android:color/white"
+          app:civ_border_width="2dp"
+          app:layout_widthPercent="44%"
+          />
+
+    </android.support.percent.PercentFrameLayout>
+
+    <android.support.percent.PercentFrameLayout
+        android:id="@+id/frame_pic_six"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/frame_pic_five"
+        app:layout_widthPercent="16.66%"
+        >
+
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:id="@+id/pic_more"
+          android:layout_height="match_parent"
+          android:layout_gravity="start"
+          android:src="@android:color/white"
+          app:civ_border_color="@color/colorPrimary"
+          app:civ_border_width="2dp"
+          app:layout_aspectRatio="100%"
+          app:layout_widthPercent="88%"
+          />
+
+      <TextView
+          android:id="@+id/txt_more"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          app:layout_marginRightPercent="4%"
+          android:gravity="center"
+          android:textColor="@color/colorPrimary"
+          android:textSize="@dimen/material_text_body1"
+          tools:text="+79"
+          />
+
+
+    </android.support.percent.PercentFrameLayout>
+
+
+  </android.support.percent.PercentRelativeLayout>
+
+</LinearLayout>

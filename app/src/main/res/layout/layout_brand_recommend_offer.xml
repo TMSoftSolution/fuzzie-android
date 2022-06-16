@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_stroke_loblolly_1dp"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_medium"
+    >
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/margin_medium"
+      android:text="@string/recommended_club_offers"
+      android:textColor="@color/textColorPrimary"
+      android:textSize="@dimen/material_text_subhead"
+      fontPath="@string/font_brandon_bold"
+      tools:ignore="MissingPrefix"
+      />
+
+  <android.support.v7.widget.RecyclerView
+      android:id="@+id/rv_recommended_offers"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+      tools:listitem="@layout/item_recommened_club_offer"
+      />
+
+</LinearLayout>

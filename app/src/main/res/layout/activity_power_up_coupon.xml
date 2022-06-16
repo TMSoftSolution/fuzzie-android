@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true"
+        app:layout_behavior="sg.com.fuzzie.android.utils.FlingBehavior"
+        android:visibility="visible">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            app:contentScrim="?attr/colorPrimary"
+            app:collapsedTitleGravity="center"
+            app:collapsedTitleTextAppearance="@style/AppBarTextAppearance"
+            app:expandedTitleTextAppearance="@style/AppBarExpandedTextAppearance">
+
+            <!-- Image Header -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/ivCover"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/brands_placeholder" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvSoldOut"
+                    fontPath="@string/font_brandon_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:lines="1"
+                    android:text="SOLD OUT"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:background="@drawable/bg_soldout"
+                    android:textSize="13sp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+                app:layout_collapseMode="pin"
+                app:contentInsetLeft="0dp"
+                app:contentInsetRight="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="55dp"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="POWER UP CARD"
+                        android:ellipsize="end"
+                        android:textSize="16sp"
+                        fontPath="@string/font_brandon_bold"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F5F5"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F5F5F5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="21dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvCouponName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            fontPath="@string/font_lato_bold"
+                            android:textSize="20sp"
+                            android:textColor="@color/textColorTertiary"/>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            fontPath="@string/font_lato_black"
+                            android:textSize="20sp"
+                            android:textColor="@color/colorPrimary"/>
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cvCashback"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="0dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tvCashback"
+                                fontPath="@string/font_brandon_black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/celestial_blue"
+                                android:drawableLeft="@drawable/ic_cashback_white_16dp"
+                                android:drawablePadding="4dp"
+                                android:gravity="center"
+                                android:paddingBottom="8dp"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp"
+                                android:paddingTop="8dp"
+                                android:text="20%"
+                                android:textColor="@color/white"
+                                android:textSize="13sp" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tvPowerUp"
+                                fontPath="@string/font_brandon_black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg_powerup_white"
+                                android:drawableLeft="@drawable/ic_lighting_accent_16dp"
+                                android:drawablePadding="4dp"
+                                android:gravity="center"
+                                android:paddingBottom="8dp"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp"
+                                android:paddingTop="8dp"
+                                android:text="+20%"
+                                android:textColor="#3B93DA"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_gravity="center">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvChoose"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?selectableItemBackground"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="0dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        fontPath="@string/font_brandon_black"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="BUY NOW"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:id="@+id/cashContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/bg_cash_back_info"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/cashbackInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:gravity="center|start"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:src="@drawable/ic_cashback"/>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvCashbackPercentage"
+                            fontPath="@string/font_lato_bold"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginStart="8dp"
+                            android:textColor="#5B5B5B"
+                            android:textSize="14sp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvEarn"
+                            fontPath="@string/font_lato_black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="15dp"
+                            android:gravity="center"
+                            android:textColor="@color/discount_blue"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ticketInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:gravity="center|start"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:src="@drawable/ic_jackpot_ticket"/>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            fontPath="@string/font_lato_bold"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginStart="8dp"
+                            android:text="Free Jackpot Tickets"
+                            android:textColor="#5B5B5B"
+                            android:textSize="14sp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvTicketCount"
+                            fontPath="@string/font_lato_black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="15dp"
+                            android:gravity="center"
+                            android:textColor="#5B5B5B"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvLearnMore"
+                    fontPath="@string/font_lato_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:padding="8dp"
+                    android:layout_gravity="center"
+                    android:text="@string/txt_learn_more_reward"
+                    android:textColor="#A3A3A3"
+                    android:textSize="12sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvRedeemValid"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#406FFA3E"
+                    android:textColor="#579741"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    fontPath="@string/font_lato_bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llValidOptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lily_white" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvValidOption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingEnd="16dp"
+                    android:background="@color/white"
+                    android:clipToPadding="false"/>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lily_white" />
+
+            <LinearLayout
+                android:id="@+id/llDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F5F5F5"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/lily_white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        fontPath="@string/font_lato_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/txt_description"
+                        android:textColor="#424242"
+                        android:textSize="15sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvDesc"
+                        fontPath="@string/font_lato_regular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:lineSpacingMultiplier="1.1"
+                        android:textColor="#434343"
+                        android:textIsSelectable="true"
+                        android:autoLink="web"
+                        android:linksClickable="true"
+                        android:textColorLink="@color/colorPrimary"
+                        tools:text="After a long and hard day at work in the concrete jungle of Singapore’s Central Business District, there wasn’t any reason or place to linger about, kick back and chill out at. 'Til now. at work in the fabulous place..." />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lily_white" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/lily_white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/btnTermsAndConditions"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="16dp"
+                        android:src="@drawable/icon_terms_conditions"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        fontPath="@string/font_lato_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:text="Terms and conditions"
+                        android:textColor="#424242"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/ic_chevron_right_grey" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@color/lily_white" />
+
+                <LinearLayout
+                    android:id="@+id/btnHowToRedeem"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="16dp"
+                        android:src="@drawable/icon_how_to_redeem"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        fontPath="@string/font_lato_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:text="How to redeem"
+                        android:textColor="#424242"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/ic_chevron_right_grey" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lily_white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llPreview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lily_white" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    fontPath="@string/font_brandon_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="24dp"
+                    android:text="POWER UP PREVIEW"
+                    android:textColor="@color/textColorTertiary"
+                    android:textSize="16sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    fontPath="@string/font_lato_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Checkout the boosted cashback you will enjoy on these brands and many more!"
+                    android:textColor="#949494"
+                    android:textSize="11sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvPreview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/white"
+                    tools:listitem="@layout/item_shop_brand"
+                    android:paddingRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:clipToPadding="false" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lily_white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

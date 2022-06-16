@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_order_history_header_id"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/ivBackground"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:src="@drawable/history_background"
+            android:background="@drawable/bg_history"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvTotalCashback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="S$49"
+                android:textSize="40sp"
+                fontPath="@string/font_brandon_bold"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvTotalDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="TOTAL CASHBACK EARNED"
+                android:textAllCaps="true"
+                android:textSize="14sp"
+                fontPath="@string/font_brandon_bold"
+                android:textAlignment="center"
+                android:letterSpacing="0.1"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

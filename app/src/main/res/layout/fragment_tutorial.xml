@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <ImageView
+        android:id="@+id/iv_bear"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:src="@drawable/bear"
+        android:padding="@dimen/tutorial_bear_padding"/>
+
+    <FrameLayout
+        android:id="@+id/frame_tutor_pic"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_tutorial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="-36dp"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:padding="@dimen/tutorial_text_padding"
+        android:orientation="vertical"
+        android:background="@android:color/white">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_tutorial_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_to_fuzzie"
+            fontPath="@string/font_lato_bold"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/material_text_title"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_tutorial_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fuzzie_gives_you_instant_cashback"
+            android:layout_marginTop="16dp"
+            fontPath="@string/font_lato_regular"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/dimen_nav_menu_content"
+            android:textColor="@color/textColorTertiary"
+            android:textSize="@dimen/material_text_body1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

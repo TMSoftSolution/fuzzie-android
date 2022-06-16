@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="10dp"
+    android:gravity="center"
+    android:id="@+id/item_power_up_id"
+    android:background="@drawable/bg_power_up_pack">
+
+    <ImageView
+        android:id="@+id/ivBrand"
+        android:layout_width="51dp"
+        android:layout_height="71dp"
+        android:paddingTop="10dp"
+        android:layout_marginStart="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_power_up_pack"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvCouponName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M Power Up Pack"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            fontPath="@string/font_brandon_black" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvCardCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="2x Power Up Cards"
+            android:textColor="@color/black"
+            android:alpha="0.62"
+            android:textSize="13sp"
+            fontPath="@string/font_lato_bold" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvTicketCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="12x Free Jackpot Tickekts"
+            android:textColor="@color/black"
+            android:alpha="0.62"
+            android:textSize="13sp"
+            fontPath="@string/font_lato_bold" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="S$3.50"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        fontPath="@string/font_lato_bold" />
+
+
+</LinearLayout>

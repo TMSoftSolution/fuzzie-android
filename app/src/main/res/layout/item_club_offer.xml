@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="105dp"
+    android:id="@+id/item_club_offer_id"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rlStore"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_centerVertical="true">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/ivStore"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="2dp"
+            android:src="@drawable/categories_placeholder"/>
+
+        <RelativeLayout
+            android:id="@+id/vShadow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_offer_redeemed"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icn_selected"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/rlStore"
+        android:layout_toStartOf="@+id/ivArrow"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvOfferName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#262626"
+            android:textSize="14sp"
+            fontPath="@string/font_lato_bold" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvOfferType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="#939393"
+            android:textSize="12sp"
+            fontPath="@string/font_lato_regular" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvSaving"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp"
+            fontPath="@string/font_lato_bold" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvRedeemDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="#939393"
+            android:textSize="12sp"
+            fontPath="@string/font_lato_bold"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_chevron_right_grey"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/light_border"/>
+
+</RelativeLayout>

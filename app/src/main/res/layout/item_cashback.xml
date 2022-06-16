@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_cashback_id"
+    android:layout_height="90dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="8dp"
+    android:background="@color/background_white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/white_badge_bg">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvCashbackDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/cvCashback"
+            android:paddingEnd="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_centerVertical="true"
+            android:text="Cashback applies on gift cards and packages"
+            android:textSize="13sp"
+            android:textColor="#929292"
+            fontPath="@string/font_lato_bold" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvCashback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="2dp">
+
+            <LinearLayout
+                android:id="@+id/llCashbackPowerup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvCashback"
+                    android:background="@color/celestial_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:drawableStart="@drawable/ic_cashback_white_16dp"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    fontPath="@string/font_brandon_bold"
+                    android:text="20%"
+                    android:textSize="13sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvPowerUp"
+                    android:background="@drawable/bg_powerup_white"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_lighting_accent_16dp"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:textColor="#3B93DA"
+                    fontPath="@string/font_brandon_bold"
+                    android:text="+20%"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

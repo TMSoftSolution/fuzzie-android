@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_club_filter_category_id"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginBottom="10dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/ivCategory"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/brands_placeholder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintDimensionRatio="2:1"
+        app:riv_corner_radius="2dp"/>
+
+    <View
+        android:id="@+id/vEffect"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/ivCategory"
+        app:layout_constraintEnd_toEndOf="@id/ivCategory"
+        app:layout_constraintTop_toTopOf="@id/ivCategory"
+        app:layout_constraintBottom_toBottomOf="@id/ivCategory"
+        android:background="@drawable/bg_primary_2dp"
+        android:alpha="0.8"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvCategory"
+        fontPath="@string/font_brandon_black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="@id/ivCategory"
+        app:layout_constraintEnd_toEndOf="@id/ivCategory"
+        app:layout_constraintTop_toTopOf="@id/ivCategory"
+        app:layout_constraintBottom_toBottomOf="@id/ivCategory"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="BREAKFAST DEALS"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:shadowColor="#80000000"
+        android:shadowRadius="10"/>
+
+
+</android.support.constraint.ConstraintLayout>

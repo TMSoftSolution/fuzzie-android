@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/margin_medium"
+    android:layout_marginLeft="@dimen/margin_medium"
+    android:layout_marginRight="@dimen/margin_medium"
+    android:layout_marginStart="@dimen/margin_medium"
+    android:layout_marginTop="@dimen/margin_medium"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="vertical">
+
+
+  <sg.com.fuzzie.android.views.TripAdvisorRatingView
+      android:id="@+id/rv_trip_advisor"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      />
+
+  <TextView
+      android:id="@+id/txt_review_count"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:layout_marginLeft="@dimen/margin_medium"
+      android:layout_toRightOf="@id/rv_trip_advisor"
+      android:textSize="@dimen/material_text_subhead"
+      tools:text="(56 Reviews)"
+      />
+
+  <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:src="@drawable/ic_right_loblolly_24dp"
+      />
+</RelativeLayout>

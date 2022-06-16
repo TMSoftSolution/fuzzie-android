@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:id="@+id/item_prize_id"
+    android:background="@color/colorJackpot">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvOrder"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:text="1"
+        android:textSize="13sp"
+        fontPath="@string/font_brandon_black"
+        android:layout_marginStart="16dp"
+        android:gravity="center"
+        android:textColor="#A0000000"
+        android:background="@drawable/bg_prize_normal"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/tvOrder"
+        android:layout_marginStart="8dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S$3000"
+            android:textSize="18sp"
+            fontPath="@string/font_brandon_medium"
+            android:textColor="@color/white"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1st Prize"
+            android:textSize="12sp"
+            fontPath="@string/font_lato_regular"
+            android:textColor="@color/white"
+            android:alpha="0.3"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvNotDrawYet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:text="Not drawn yet"
+        android:textSize="12sp"
+        fontPath="@string/font_lato_regular"
+        android:textColor="@color/white"
+        android:alpha="0.3"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvFourD"
+        android:layout_width="64dp"
+        android:layout_height="36dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:text="4323"
+        android:textSize="20sp"
+        android:gravity="center"
+        fontPath="@string/font_brandon_bold"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_jackpot_ticket_item_grey"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvWon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/tvFourD"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="8dp"
+        android:text="You've won!"
+        android:textSize="12sp"
+        fontPath="@string/font_lato_black"
+        android:textColor="@color/white"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/bottomDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:alpha="0.1"
+        android:visibility="invisible"/>
+
+    <View
+        android:id="@+id/topDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:alpha="0.1"/>
+
+</RelativeLayout>

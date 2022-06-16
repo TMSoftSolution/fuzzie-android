@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/gifting_available"
+        android:textAlignment="center"
+        android:textColor="@color/textColorTertiary"
+        android:textSize="14sp"
+        app:fontPath="@string/font_lato_regular"
+        android:lineSpacingMultiplier="1.2"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/tvDesc"
+        android:layout_marginBottom="16dp"
+        android:text="INSTANT GIFTING NOW AVAILABLE"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        app:fontPath="@string/font_brandon_black"
+        android:lineSpacingMultiplier="1.2"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:paddingEnd="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/tvTitle"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/gift_available"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/howItWorks"
+        fontPath="@string/font_lato_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="?selectableItemBackground"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/how_it_works"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvGotIt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/howItWorks"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?selectableItemBackground"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="0dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvGotIt"
+            fontPath="@string/font_brandon_black"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="GOT IT"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/llShare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        android:layout_above="@+id/cvGotIt"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_share_whatsapp"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/whats_app"
+                android:textAlignment="center"
+                android:textColor="@color/textColorTertiary"
+                android:textSize="12sp"
+                app:fontPath="@string/font_lato_regular"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_share_messenger"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Messenger"
+                android:textAlignment="center"
+                android:textColor="@color/textColorTertiary"
+                android:textSize="12sp"
+                app:fontPath="@string/font_lato_regular"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_share_wechat"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/wechat"
+                android:textAlignment="center"
+                android:textColor="@color/textColorTertiary"
+                android:textSize="12sp"
+                app:fontPath="@string/font_lato_regular"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_share_sms"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/appCompatTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="SMS"
+                android:textAlignment="center"
+                android:textColor="@color/textColorTertiary"
+                android:textSize="12sp"
+                app:fontPath="@string/font_lato_regular" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_share_email" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Email"
+                android:textAlignment="center"
+                android:textColor="@color/textColorTertiary"
+                android:textSize="12sp"
+                app:fontPath="@string/font_lato_regular"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        fontPath="@string/font_lato_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/llShare"
+        android:text="Fun ways to deliver your gift:"
+        android:textAlignment="center"
+        android:textColor="@color/textColorFourth"
+        android:textSize="14sp" />
+
+</RelativeLayout>

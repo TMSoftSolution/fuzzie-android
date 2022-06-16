@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/code_success_red"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:id="@+id/ivBackground1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_activate_success_cashback"
+        android:visibility="gone"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/ivCircle"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/success_circle"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvCredits"
+        fontPath="@string/font_brandon_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@id/ivCircle"
+        android:layout_marginTop="80dp"
+        android:text="S$100"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="60sp" />
+
+    <ImageView
+        android:id="@+id/ivLightning"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/ivCircle"
+        android:layout_marginTop="50dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/lightning_white"/>
+
+    <ImageView
+        android:id="@+id/ivCheck"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@id/ivCircle"
+        android:layout_marginTop="75dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/activate_check"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        fontPath="@string/font_brandon_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvCredits"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:text="HAS BEEN CREDITED TO YOUR FUZZIE ACCOUNT"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvDescription"
+        fontPath="@string/font_lato_regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_below="@+id/tvTitle"
+        android:textAlignment="center"
+        android:text="Enjoy your shopping experience!"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvShop"
+        fontPath="@string/font_brandon_black"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_above="@+id/llAnotherCode"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:clickable="true"
+        android:background="@drawable/white_bg"
+        android:text="START SHOPPING"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp" />
+
+
+    <LinearLayout
+        android:id="@+id/llAnotherCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:gravity="center">
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvAnotherCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activate another card"
+            android:padding="8dp"
+            android:foreground="?selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            fontPath="@string/font_lato_bold"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

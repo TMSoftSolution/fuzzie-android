@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="@color/primary"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnReset"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            fontPath="@string/font_lato_bold"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@android:color/transparent"
+            android:layout_centerVertical="true"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:text="FILTERS"
+            android:maxLines="1"
+            android:textSize="16sp"
+            android:ellipsize="end"
+            fontPath="@string/font_brandon_black"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginStart="16dp"
+                android:text="CATEGORIES"
+                android:textColor="#262626"
+                android:textSize="14sp"
+                fontPath="@string/font_brandon_black"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvCategories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="11dp"
+                android:paddingEnd="11dp"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                android:nestedScrollingEnabled="false"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                android:nestedScrollingEnabled="false"/>
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnFilter"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="APPLY FILTERS"
+        fontPath="@string/font_brandon_black"
+        android:textSize="13sp"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"/>
+
+</LinearLayout>

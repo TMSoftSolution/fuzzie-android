@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_payment_method_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp">
+
+  <RelativeLayout
+      android:background="@color/primary"
+      android:layout_width="match_parent"
+      android:layout_height="56dp">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_arrow_back"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="PAYMENT METHODS"
+        android:maxLines="1"
+        android:textSize="16sp"
+        fontPath="@string/font_brandon_bold"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        >
+
+      <android.support.v7.widget.AppCompatTextView
+          android:id="@+id/tvEdit"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:padding="8dp"
+          android:textColor="@color/white"
+          android:textSize="14sp"
+          fontPath="@string/font_lato_bold"
+          android:text="Edit" />
+    </LinearLayout>
+
+  </RelativeLayout>
+
+  <android.support.v7.widget.AppCompatTextView
+      android:id="@+id/tvMethods"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="10dp"
+      android:layout_marginTop="15dp"
+      android:paddingLeft="16dp"
+      android:paddingRight="16dp"
+      android:text="PREFERRED PAYMENT METHOD"
+      fontPath="@string/font_brandon_medium"
+      android:textSize="13sp"
+      android:textAllCaps="true"
+      android:textColor="#5F5E5E"/>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="#E5E5E5">
+
+  </LinearLayout>
+
+  <android.support.v7.widget.RecyclerView
+      android:id="@+id/rvPaymentMethods"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+
+</LinearLayout>

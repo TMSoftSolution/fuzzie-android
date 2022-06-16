@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/primary"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:id="@+id/ivSearch"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:src="@drawable/ic_search_white"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="FUZZIE CLUB"
+            android:textSize="16sp"
+            fontPath="@string/font_brandon_black"
+            android:textAllCaps="true"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/ivReferral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_toStartOf="@+id/ivFavorite"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_club_referral"
+            />
+
+        <ImageView
+            android:id="@+id/ivFavorite"
+            android:src="@drawable/ic_club_bookmark"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:padding="8dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="6dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swipeContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/joinBanner"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvClub"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"/>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/joinBanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="0.00001dp"
+            app:cardElevation="8dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="16dp"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Join the Fuzzie Club"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        fontPath="@string/font_lato_black" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Get access to all deals now and start saving big!"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        fontPath="@string/font_lato_regular" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/ic_chevron_right_white"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <color name="colorPrimary">#fa3e3f</color>
+  <color name="colorPrimaryDark">#AB2A2B</color>
+  <color name="colorAccent">#3b93da</color>
+  <color name="colorAccentDark">#236295</color>
+  <color name="textColorPrimary">#212121</color>
+  <color name="textColorSecondary">#727272</color>
+  <color name="textColorTertiary">#424242</color>
+  <color name="textColorQuarternary">#f7f7f7</color>
+  <color name="textColorQuinary">#929292</color>
+  <color name="textColorSenary">#787878</color>
+  <color name="textHintColor">#BDBDBD</color>
+  <color name="textColorFourth">#ADADAD</color>
+  <color name="dividerColor">#B6B6B6</color>
+  <color name="loblolly">#B9B9B9</color>
+  <color name="textPowerUpPackDeal">#0B3F68</color>
+  <color name="colorTransparent">#00000000</color>
+
+  <color name="background_white">#FAFAFA</color>
+
+  <color name="black">#000</color>
+  <color name="white">#FFFFFF</color>
+  <color name="lily_white">#E4E4E4</color>
+  <color name="facebook">#4267B2</color>
+  <color name="facebookAccent">#263D6C</color>
+  <color name="background">#F5F5F5</color>
+  <color name="celestial_blue">#3F95D7</color>
+  <color name="lily_divider">#CACACA</color>
+
+  <color name="colorPrimaryDisabled">#99fa3e3f</color>
+  <color name="colorPrimaryDarkDisabled">#99AB2A2B</color>
+
+  <color name="transparent_neo">#E6242526</color>
+
+  <color name="my_sin">#FFB923</color>
+  <color name="dark_tangerine">#FFA911</color>
+  <color name="tuatara">#363636</color>
+
+  <color name="grey_transparent">#42616161</color>
+
+  <color name="skip_gray_color" >#D4D4D4</color>
+  <color name="discount_blue">#3B93DA</color>
+  <color name="light_border">#E5E5E5</color>
+
+  <color name="colorJackpot">#212121</color>
+  <color name="colorJackpotYellow">#F8C736</color>
+  <color name="colorJackpotPinBackground">#55000000</color>
+  <color name="colorJackpotBrown">#D66100</color>
+  <color name="colorJackpotTicketDisable">#4F4F4F</color>
+
+  <color name="colorRedPacketTheme">#0D0D0D</color>
+  <color name="colorChampion">#FBAD2C</color>
+
+  <color name="colorPowerUpActive">#3B93DA</color>
+  <color name="colorPowerUpInactive">#939393</color>
+  <color name="colorPowerupBadgeBackground">#F9F9F9</color>
+  <color name="colorPowerUpCardRedeemed">#70FF9F9F</color>
+  <color name="colorPowerUpCardValid">#406FFA3E</color>
+  <color name="colorPowerUpCardValidText">#579741</color>
+
+  <color name="material_teal_light">#52c7b8</color>
+  <color name="material_teal_dark">#00675b</color>
+
+  <color name="store_open_color">#50AE32</color>
+  <color name="store_close_soon_color">#F5A623</color>
+
+</resources>

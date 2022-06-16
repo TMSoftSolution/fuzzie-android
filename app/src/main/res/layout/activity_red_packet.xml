@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_back"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LUCKY PACKETS"
+            android:maxLines="1"
+            android:textSize="16sp"
+            fontPath="@string/font_brandon_bold"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:padding="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Help?"
+            android:textColor="@color/white"
+            fontPath="@string/font_lato_bold"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="50dp"
+                    android:src="@drawable/image_red_packet_confetti"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:src="@drawable/image_double_red_packet"/>
+
+            </FrameLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvTitle"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="4dp"
+                android:text="LUCKY PACKETS"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:shadowColor="#33000000"
+                android:shadowDx="0"
+                android:shadowDy="1"
+                android:shadowRadius="5"
+                fontPath="@string/font_brandon_black"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:text="Send credits and Jackpot tickets to friends and bring them luck."
+                android:lineSpacingMultiplier="1.1"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textAlignment="center"
+                android:shadowColor="#33000000"
+                android:shadowDx="0"
+                android:shadowDy="2"
+                android:shadowRadius="4"
+                fontPath="@string/font_lato_regular"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="16dp"
+                android:text="SEND LUCKY PACKETS TO"
+                android:textColor="@color/white"
+                android:textSize="11sp"
+                android:textAlignment="center"
+                fontPath="@string/font_brandon_black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvPerson"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?selectableItemBackground"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="0dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        fontPath="@string/font_brandon_black"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="1 PERSON"
+                        android:textAllCaps="true"
+                        android:textColor="@color/primary"
+                        android:textSize="14sp"
+                        android:background="@color/white"/>
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvGroup"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="16dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?selectableItemBackground"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="0dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        fontPath="@string/font_brandon_black"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="A GROUP"
+                        android:textAllCaps="true"
+                        android:textColor="@color/primary"
+                        android:textSize="14sp"
+                        android:background="@color/white"/>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/ticketBanner"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="#272727">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="16dp"
+                    android:layout_centerVertical="true">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvTicket"
+                        fontPath="@string/font_lato_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GET 3 FREE JACKPOT TICKETS"
+                        android:textColor="@color/colorJackpotYellow"
+                        android:textSize="12sp"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        fontPath="@string/font_lato_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="when you send your first packet"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:alpha="0.6"/>
+
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvLearnMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?selectableItemBackground"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        fontPath="@string/font_brandon_black"
+                        android:layout_width="90dp"
+                        android:layout_height="26dp"
+                        android:gravity="center"
+                        android:text="LEARN MORE"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:background="@drawable/bg_white_stroke_transparent_radius_23dp"/>
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
